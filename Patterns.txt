@@ -1,0 +1,58 @@
+﻿## This file contains regular expressions for POS-tagging.
+## Lines starting with ## are comments and will be ignored. Everything else has to be either
+## an empty line or a line containing a pos-tag and a regular expression seperated by a whitespace.
+## Everything else, including additional whitespaces, will most likely crash the tagger.
+## Regular expressions will be interpreted bei Java.lang.String and must be formatted accordingly.
+
+
+relative_pronoun yo|yaṃ|yena|yassa|yasmā|yamhā|yasmiṃ|yamhi|yā|yāya|yassā|yāyaṃ|ye|yehi|yebhi|yesaṃ|yesānaṃ|yesu|yāhi|yāsaṃ|yāsānaṃ|yāsu|yāni
+
+interrogative_pronoun |ko|kaṃ|kena|kassa|kasmā|kismā|kassa|kissa|kasmiṃ|kamhi|kismiṃ|kamhi|kā|kaṃ|kāya|kassā|kissā|kayaṃ|kissaṃ|kiṃ|ke|kehi|kebhi|kesaṃ|kesānaṃ|kesu|kāyo|kāhi|kāsaṃ|kāsānaṃ|kāsu|kim
+
+
+## e + declined pronoun: can't implement that rule here, going to have to do something in the
+## java code. Things are about to get ugly I guess.
+
+demonstrative_pronoun (ay)(aṃ|inā)
+demonstrative_pronoun (ima)(ṃ|sma|mhā|ssa|smiṃ|mhi)?
+demonstrative_pronoun (imi)(ssā|nā|ssāya|ssaṃ)
+demonstrative_pronoun (imā)(ya|saṃ|yaṃidaṃ|yo|hi|bhi|sānaṃ|ni)?
+demonstrative_pronoun (ime)(hi|bhi|saṃ|sānaṃ|su)?
+demonstrative_pronoun (a)(smā|mhā|ssa|smiṃ|ssā|ssāya|ssaṃ|nena|su|dussa|duṃ)
+demonstrative_pronoun (e)(hi|bhi|saṃ|sānaṃ|su)
+demonstrative_pronoun (ā)(saṃ)
+demonstrative_pronoun (amu)(ṃ|nā|smā|mhā|ssa|smiṃ|mhi|yā|ssā|ssaṃ|yaṃ|mū|yo)?
+demonstrative_pronoun (amū)(hi|bhi|saṃ|sānaṃ|su|ni)?
+
+
+personal_pronoun (a)(haṃ|mhe|mhehi|mhākaṃ|mhesu|mhā|sme|smākaṃ|mhākaṃ|mhebhi|smākaṃ|mhaṃ|smāsu|smesu)
+personal_pronoun (ma)(ṃ|yā|ma|yhaṃ|amaṃ|yi)
+personal_pronoun me
+personal_pronoun no
+personal_pronoun (s)(o|a|ā|e|ānaṃ)
+personal_pronoun (tva)(ṃ|yā|yi)
+personal_pronoun (ta)(ṃ|vaṃ|yā|va|yi|smā|mhā|to|ssa|smiṃ|mhi|daṃ|d|ssā|ssaṃ)?
+personal_pronoun (tā)(ya|saṃ|yaṃ|yo|bhi|sānaṃ|su|ni)?
+personal_pronoun (ti)(ssā|ssaṃ|ssāya)
+personal_pronoun (tu)(vaṃ|yhaṃ|mhaṃ|mhe|mhākaṃ|mhebhi|mhaṃ|mhehi|mhesu)
+personal_pronoun (te)(na|hi|bhi|saṃ|sānaṃ|su)?
+personal_pronoun vo
+
+
+verb (.*)(ssāmhase|ssamhase|eyyāmhe|eyyātha|eyyavho|ssāmase|ssaavhe)
+verb (.*)(eyyama|eyyāmi|eyyāsi|eyyati|sittha|ssamhā|ssāmhe|ssamhe|ssaṃsu|ssante|ssanti|ssavhe|ssiṃsu|ssatha)
+verb (.*)(attha|emase|emasi|eyyaṃ|eyyuṃ|hanti|hatha|hinti|issaṃ|ittha|ittho|mhase|mhasa)
+verb (.*)(simhā|simha|siṃsu|sisuṃ|ssare|ssase|ssasi|ssate|ssati|ssāmi|ssāma|tthuṃ)
+verb (.*)(amha|amhā|atha|eraṃ|etha|etho|eyya|eyyu|hāma|hāmi|hasi|hati|hisi|hiti|imha|imhā|imhe|iṃsu)
+verb (.*)(iruṃ|isaṃ|issa|isuṃ|ivho|mahe|mase|ntaṃ|ttha|ssaṃ|ssām|thaṃ|vham)
+verb (.*)(āma|asi|ema|emu|mha|mhā|mhe|mse|ṃsu|nte|nti|ntu|ruṃ|sim|ssā|ssa|sse|ssu|suṃ|taṃ|tha|vhe|vho)
+
+## these are so short that they create lots of false positives
+verb (.*)(hi|ma|mi|re|se|si|ti|tu|te|iṃ|aṃ)
+verb (.*)(ī|aṃ|e|ṃ|o|ā|u|ū)
+
+
+## Forms of "to be"
+verb (.*)(asmi|asmhi|asi|atthi|āhi|atthu|assaṃ|assa|siyaṃ|siyā|asmā|amhā|attha)
+verb (.*)(santi|santu|assāma|assatha|assu|siyuṃ|siyaṃsu|homi|hosi|hoti|hohi|hotu)
+verb (.*)(huveyyaṃ|huveyyāsi|huveyyāti|homa|hotha|honti|hontu|huveyyuṃ|huveyyāma|huveyyātha)

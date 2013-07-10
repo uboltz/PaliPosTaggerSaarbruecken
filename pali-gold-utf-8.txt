@@ -1,0 +1,913 @@
+﻿' @quote@
+' @quote@
+Kusāvatī proper_noun
+, @comma@
+ānanda proper_noun
+, @comma@
+rājadhānī noun
+sattahi numeral
+pākārehi noun
+parikkhittā past_participle
+ahosi verb
+. @point@
+
+
+Eko numeral
+pākāro noun
+sovaṇṇamayo adjective
+, @comma@
+eko numeral
+rūpiyamayo adjective
+, @comma@
+eko numeral
+veḷuriyamayo adjective
+, @comma@
+eko numeral
+phalikamayo adjective
+, @comma@
+eko numeral
+lohitaṅkamayo adjective
+, @comma@
+eko numeral
+masāragallamayo adjective
+, @comma@
+eko numeral
+sabbaratanamayo adjective
+. @point@
+
+
+Kusāvatiyā proper_noun
+, @comma@
+ānanda proper_noun
+, @comma@
+rājadhāniyā noun
+catunnaṃ numeral
+vaṇṇānaṃ adjective
+dvārāni noun
+ahesuṃ verb
+. @point@
+
+
+Rājā noun
+, @comma@
+ānanda proper_noun
+, @comma@
+mahāsudassano proper_noun
+imāya demonstrative_pronoun
+dutiyāya ordinal_adjective
+iddhiyā noun
+samannāgato adjective
+ahosi verb
+. @point@
+
+
+Rājā noun
+, @comma@
+ānanda proper_noun
+, @comma@
+mahāsudassano proper_noun
+imāya demonstrative_pronoun
+tatiyāya ordinal_adjective
+iddhiyā noun
+samannāgato adjective
+ahosi verb
+. @point@
+
+
+Rūpiyamayassa adjective
+kūṭāgārassa noun
+dvāre noun
+sovaṇṇamayo adjective
+tālo noun
+ṭhito past_participle
+ahosi verb
+, @comma@
+tassa pronoun
+sovaṇṇamayo adjective
+khandho noun
+, @comma@
+rūpiyamayāni adjective
+pattāni noun
+ca coordinative_conjunction
+phalāni noun
+ca coordinative_conjunction
+. @point@
+
+
+Taṃ personal_pronoun
+devo noun
+pakudhaṃ proper_noun
+kaccāyanaṃ proper_noun
+payirupāsatu verb
+. @point@
+
+
+Taṃ pronoun
+devo noun
+bhagavantaṃ noun
+payirupāsatu verb
+. @point@
+
+
+Natthi verb
+hetu noun
+, @comma@
+natthi verb
+paccayo noun
+sattānaṃ noun
+visuddhiyā noun
+, @comma@
+ahetū noun
+apaccayā noun
+sattā noun
+visujjhanti verb
+. @point@
+
+
+So personal_pronoun
+taṃ pronoun
+dhammaṃ noun
+sutvā absolutive
+tathāgate noun
+saddhaṃ noun
+paṭilabhati verb
+. @point@
+
+
+So personal_pronoun
+tena pronoun
+saddhāpaṭilābhena noun
+samannāgato past_participle
+iti quotation_participle
+paṭisañcikkhati verb
+' @quote@
+sambādho noun
+gharāvāso noun
+rajopatho noun
+, @comma@
+abbhokāso noun
+pabbajjā noun
+. @point@
+
+
+Naccagītavāditavisūkadassanā noun
+paṭivirato past_participle
+hoti verb
+. @point@
+
+
+Mālāgandhavilepanadhāraṇamaṇḍanavibhūsanaṭṭhānā noun
+paṭivirato past_participle
+hoti verb
+. @point@
+
+
+Uccāsayanamahāsayanā noun
+paṭivirato past_participle
+hoti verb
+. @point@
+
+
+Upāsakaṃ noun
+maṃ personal_pronoun
+bhagavā noun
+dhāretu verb
+ajjatagge adverb
+pāṇupetaṃ past_participle
+saraṇaṃ noun
+gataṃ past_participle
+. @point@
+
+
+Evaṃ demonstrative_adver
+me personal_pronoun
+sutaṃ past_participle
+ekaṃ numeral
+samayaṃ noun
+bhagavā noun
+kosambiyaṃ proper_noun
+viharati verb
+ghositārāme proper_noun
+. @point@
+
+
+Adhivāsesi verb
+bhagavā noun
+tuṇhībhāvena noun
+. @point@
+
+
+Upāsakaṃ noun
+maṃ personal_pronoun
+bhavaṃ noun
+gotamo proper_noun
+dhāretu verb
+ajjatagge noun
+pāṇupetaṃ past_participle
+saraṇaṃ noun
+gataṃ past_participle
+Adhivāsetu verb
+ca coordinative_conjunction
+me personal_pronoun
+bhavaṃ noun
+gotamo proper_noun
+svātanāya noun
+bhattaṃ noun
+saddhiṃ adverb
+bhikkhusaṅghenā noun
+ti quotation_participle
+. @point@
+
+
+Tassa pronoun
+te personal_pronoun
+mayaṃ personal_pronoun
+ariyaṃ adjective
+cakkavattivattaṃ noun
+puṭṭhā past_passive_participle
+byākarissāmā verb
+ti quotation_participle
+. @point@
+
+
+Gahetvā absolutive
+rañño noun
+khattiyassa noun
+muddhābhisittassa past_passive_participle
+dassesuṃ verb
+' @quote@
+ayaṃ demonstrative_pronoun
+, @comma@
+deva noun
+, @comma@
+puriso noun
+paresaṃ adjective
+adinnaṃ past_passive_participle
+theyyasaṅkhātaṃ past_passive_participle
+ādiyī verb
+ti quotation_participle
+. @point@
+
+
+Kiṃ interrogative_pronoun
+kusalaṃ noun
+kareyyāma verb
+. @point@
+
+
+Asītivassasahassāyukesu adjective
+, @comma@
+bhikkhave noun
+, @comma@
+manussesu noun
+imasmiṃ demonstrative_pronoun
+jambudīpe proper_noun
+caturāsītinagarasahassāni noun
+bhavissanti verb
+ketumatīrājadhānīpamukhāni adjective
+. @point@
+
+
+Attamanā adjective
+te personal_pronoun
+bhikkhū noun
+bhagavato noun
+bhāsitaṃ noun
+abhinandunti verb
+. @point@
+
+
+Ayaṃ demonstrative_pronoun
+paṭhamā ordinal_adjective
+ādesanavidhā noun
+. @point@
+
+
+Ayaṃ demonstrative_pronoun
+dutiyā ordinal_adjective
+ādesanavidhā noun
+. @point@
+
+
+Ayaṃ pronoun
+tatiyā ordinal_adjective
+ādesanavidhā noun
+. @point@
+
+
+Ayaṃ demonstrative_pronoun
+paṭhamā ordinal_adjective
+dassanasamāpatti noun
+. @point@
+
+
+Atikkamma absolutive
+ca coordinative_conjunction
+purisassa noun
+chavimaṃsalohitaṃ noun
+aṭṭhiṃ noun
+paccavekkhati verb
+. @point@
+
+
+Ayaṃ demonstrative_pronoun
+dutiyā ordinal_adjective
+dassanasamāpatti noun
+. @point@
+
+
+Purisassa noun
+ca coordinative_conjunction
+viññāṇasotaṃ noun
+pajānāti verb
+, @comma@
+ubhayato adjective
+abbocchinnaṃ past_passive_participle
+idha adverb
+loke noun
+patiṭṭhitañca @sandhi@
+patiṭṭhitaṃ past_passive_participle
+ca coordinative_conjunction
+paraloke noun
+patiṭṭhitañca @sandhi@
+patiṭṭhitaṃ past_passive_participle
+ca coordinative_conjunction
+. @point@
+
+
+etad demonstrative_pronoun
+ānuttariyaṃ noun
+
+
+Ayaṃ demonstrative_pronoun
+tatiyā ordinal_adjective
+dassanasamāpatti noun
+. @point@
+
+
+Atikkamma absolutive
+ca coordinative_conjunction
+purisassa noun
+chavimaṃsalohitaṃ noun
+aṭṭhiṃ noun
+paccavekkhati verb
+. @point@
+
+
+etadānuttariyaṃ @sandhi@
+, @comma@
+bhante noun
+, @comma@
+paṭipadāsu noun
+. @point@
+
+
+etad demonstrative_pronoun
+ānuttariyaṃ noun
+
+
+Te personal_pronoun
+ca coordinative_conjunction
+sattā noun
+sandhāvanti verb
+saṃsaranti verb
+cavanti verb
+upapajjanti verb
+, @comma@
+atthitveva @sandhi@
+sassatisama @sandhi@
+nti @sandhi@
+. @point@
+
+
+seyyathā adverb
+api coordinative_conjunction
+
+
+Ayaṃ demonstrative_pronoun
+paṭhamo ordinal_adjective
+sassatavādo noun
+. @point@
+
+
+Pathaviyāpi @sandhi@
+pathaviyā noun
+api coordinative_conjunction
+ummujjanimujjaṃ noun
+karoti verb
+, @comma@
+seyyathāpi @sandhi@
+udake noun
+. @point@
+
+
+udake noun
+pi coordinative_conjunction
+
+
+Udakepi @sandhi@
+abhijjamāne present_passive_participle
+gacchati verb
+, @comma@
+seyyathāpi @sandhi@
+seyyathā adverb
+api coordinative_conjunction
+pathaviyaṃ noun
+. @point@
+
+
+Ākāsepi @sandhi@
+Ākāse noun
+pi coordinative_conjunction
+pallaṅkena noun
+kamati verb
+, @comma@
+seyyathāpi @sandhi@
+seyyathā adverb
+api coordinative_conjunction
+pakkhī noun
+sakuṇo noun
+. @point@
+
+
+vihareyyaṃ verb
+ti quotation_participle
+
+
+Idha adverb
+, @comma@
+bhante noun
+, @comma@
+bhikkhu noun
+sace conditional_particle?
+ākaṅkhati verb
+' @quote@
+paṭikūle noun
+appaṭikūlasaññī adjective
+vihareyya @sandhi@
+nti @sandhi@
+vihareyyaṃ verb
+ti quotation_participle
+, @comma@
+appaṭikūlasaññī adjective
+tattha adverb
+viharati verb
+. @point@
+
+
+Bhāradvājo proper_noun
+pi coordinative_conjunction
+ayaṃ demonstrative_pronoun
+eva emphatic_particle
+ayaṃ demonstrative_pronoun
+añjasāyano noun
+māṇavo noun
+pi coordinative_conjunction
+tena pronoun
+upasaṅkamiṃsu verb
+
+
+Atha coordinative_conjunction
+kho emphatic_particle
+vāseṭṭhabhāradvājā noun
+māṇavā noun
+yena relative_pronoun
+bhagavā noun
+tenupasaṅkamiṃsu @sandhi@
+; @semicolon@
+upasaṅkamitvā absolutive
+bhagavatā noun
+saddhiṃ adverb
+sammodiṃsu verb
+. @point@
+
+
+' @quote@
+' @quote@
+Seyyathāpi @sandhi@
+Seyyathā adverb
+pi coordinative_conjunction
+, @comma@
+vāseṭṭha proper_noun
+, @comma@
+puriso noun
+evaṃ adverb
+vadeyya verb
+' @quote@
+' @quote@
+ahaṃ personal_pronoun
+yā relative_personal_pronoun
+imasmiṃ demonstrative_pronoun
+janapade noun
+janapadakalyāṇī noun
+, @comma@
+taṃ personal_pronoun
+icchāmi verb
+, @comma@
+taṃ personal_pronoun
+kāmemī verb
+ti quotation_participle
+. @point@
+
+
+Cakkhuviññeyyā future_passiv_participle
+rūpā adjective
+iṭṭhā past_passive_participle
+kantā past_passive_participle
+manāpā adjective
+piyarūpā adjective
+kāmūpasaṃhitā past_active_participle
+rajanīyā noun
+. @point@
+
+
+' @quote@
+' @quote@
+Seyyathāpi @sandhi@
+seyyathā adverb
+pi coordinative_conjunction
+, @comma@
+vāseṭṭha noun
+, @comma@
+ayaṃ demonstrative_pronoun
+aciravatī proper_noun
+nadī noun
+pūrā adjective
+udakassa noun
+samatittikā adjective
+kākapeyyā past_passive_participle
+. @point@
+
+
+Ime demonstrative_pronoun
+kho emphatic_particle
+, @comma@
+vāseṭṭha proper_noun
+, @comma@
+pañca cardinal_adjective
+nīvaraṇā noun
+ariyassa noun
+vinaye noun
+āvaraṇātipi @sandhi@
+āvaraṇā noun
+ti quotation_participle
+pi coordinative_conjunction
+vuccanti verb
+, @comma@
+nīvaraṇātipi @sandhi@
+nīvaraṇā noun
+ti quotation_participle
+pi coordinative_conjunction
+vuccanti verb
+, @comma@
+onāhanātipi @sandhi@
+onāhanā noun
+ti quotation_participle
+pi coordinative_conjunction
+vuccanti verb
+, @comma@
+pariyonāhanātipi @sandhi@
+pariyonāhanā noun
+ti quotation_participle
+pi coordinative_conjunction
+vuccanti verb
+. @point@
+
+
+' @quote@
+' @quote@
+Imehi demonstrative_pronoun
+kho emphatic_particle
+, @comma@
+vāseṭṭha noun
+, @comma@
+pañcahi cardinal_adjective
+nīvaraṇehi noun
+tevijjā adjective
+brāhmaṇā noun
+āvuṭā past_passive_participle
+nivuṭā past_passive_participle
+onaddhā past_passive_participle
+pariyonaddhā past_passive_participle
+. @point@
+
+
+' @quote@
+' @quote@
+Iti quotation_participle
+kira emphatic_particle
+, @comma@
+vāseṭṭha proper_noun
+, @comma@
+sapariggahā adjective
+tevijjā adjective
+brāhmaṇā noun
+apariggaho noun
+brahmā proper_noun
+. @point@
+
+
+Bhagavā noun
+etadavoca @sandhi@
+etad demonstrative_pronoun
+avoca verb
+. @point@
+
+
+' @quote@
+' @quote@
+Dvattiṃsimāni cardinal_adjective
+, @comma@
+bhikkhave noun
+, @comma@
+mahāpurisassa noun
+mahāpurisalakkhaṇāni noun
+, @comma@
+yehi relative_pronoun
+samannāgatassa past_passive_participle
+mahāpurisassa noun
+dveva @sandhi@
+dvi cardinal_adjective
+eva emphatic_particle
+gatiyo noun
+bhavanti verb
+anaññā adjective
+. @point@
+
+
+Buddho noun
+samāno noun
+idaṃ demonstrative_pronoun
+labhati verb
+Etamatthaṃ @sandhi@
+etaṃ demonstrative_pronoun
+atthaṃ noun
+bhagavā noun
+avoca verb
+. @point@
+
+
+Tatthetaṃ @sandhi@
+tattha adverb
+etaṃ demonstrative_pronoun
+vuccati verb
+. @point@
+
+
+Mudutalunahatthapādo adjective
+ca coordinative_conjunction
+hoti verb
+jālahatthapādo adjective
+ca coordinative_conjunction
+. @point@
+
+
+etaṃ demonstrative_pronoun
+atthaṃ noun
+
+
+Rājā noun
+samāno present_active_participle
+idaṃ demonstrative_pronoun
+labhati verb
+buddho noun
+samāno present_active_participle
+kiṃ interrogative_pronoun
+labhati verb
+. @point@
+
+
+Yāni relative_pronoun
+tāni pronoun
+samaṇārahāni adjective
+samaṇaṅgāni adjective
+samaṇūpabhogāni adjective
+samaṇānucchavikāni adjective
+, @comma@
+tāni pronoun
+khippaṃ adverb
+paṭilabhati verb
+. @point@
+
+
+Buddho noun
+samāno present_active_participle
+idaṃ demonstrative_pronoun
+labhati verb
+Etamatthaṃ @sandhi@
+bhagavā noun
+avoca verb
+. @point@
+
+
+Mahāpañño adjective
+hoti verb
+, @comma@
+nāssa @sandhi@
+hoti verb
+koci interrogative_pronoun
+paññāya noun
+sadiso adjective
+vā coordinative_conjunction
+seṭṭho adjective
+vā coordinative_conjunction
+kāmabhogīnaṃ adjective
+. @point@
+
+
+Rājā noun
+samāno present_active_participle
+idaṃ demonstrative_pronoun
+labhati verb
+buddho noun
+samāno present_active_participle
+kiṃ interrogative_pronoun
+labhati verb
+. @point@
+
+
+etaṃ demonstrative_pronoun
+atthaṃ noun
+
+
+Rājā noun
+samāno present_active_participle
+idaṃ demonstrative_pronoun
+labhati verb
+buddho noun
+samāno present_active_participle
+kiṃ interrogative_pronoun
+labhati verb
+. @point@
+
+
+Buddho noun
+samāno present_active_participle
+idaṃ demonstrative_pronoun
+labhati verb
+Etamatthaṃ @sandhi@
+bhagavā noun
+avoca verb
+. @point@
+
+
+Natthi @sandhi@
+lohitakāni adjective
+rūpāni noun
+, @comma@
+natthi @sandhi@
+lohitakānaṃ adjective
+rūpānaṃ noun
+dassāvī noun
+. @point@
+
+
+ca coordinative_conjunction
+eva emphatic_particle
+jīvitaṃ noun
+ca coordinative_conjunction
+gabbhaṃ noun
+ca coordinative_conjunction
+sāpateyyaṃ noun
+ca coordinative_conjunction
+
+
+Sā personal_pronoun
+attānaṃ noun
+ceva @sandhi@
+jīvitañca @sandhi@
+gabbhañca @sandhi@
+sāpateyyañca @sandhi@
+vināsesi verb
+. @point@
+
+
+Te pronoun
+taṃ pronoun
+purisaṃ noun
+uttānaṃ adjective
+nipātenti verb
+. @point@
+
+
+Te personal_pronoun
+taṃ personal_pronoun
+purisaṃ noun
+odhunanti verb
+sandhunanti verb
+niddhunanti verb
+. @point@
+
+
+Yaṃnūnāhaṃ @sandhi@
+aggiṃ noun
+nibbattetvā absolutive
+aggiṃ noun
+paricareyya @sandhi@
+nti @sandhi@
+. @point@
+
+
+Nevāhaṃ @sandhi@
+aggiṃ noun
+adhigacchiṃ verb
+. @point@
+
+
+Evameva @sandhi@
+kho emphatic_particle
+tvaṃ personal_pronoun
+, @comma@
+rājañña noun
+, @comma@
+bālo adjective
+abyatto adjective
+ayoniso adjective
+paralokaṃ noun
+gavesissasi verb
+. @point@
+
+
+Tattha adverb
+addasa verb
+pahūtaṃ adjective
+sukkhagūthaṃ noun
+chaḍḍitaṃ past_passive_participle
+. @point@
+
+
+Atha coordinative_conjunction
+kho emphatic_particle
+so personal_pronoun
+sahāyako noun
+sāṇasuttabhāraṃ noun
+chaḍḍetvā absolutive
+sāṇibhāraṃ noun
+ādiyi verb
+. @point@
+
+
+Atha coordinative_conjunction
+kho emphatic_particle
+āyasmā adjective
+ānando proper_noun
+yena relative_pronoun
+bhagavā noun
+tenupasaṅkami @sandhi@
+tena pronoun
+upasaṅkami verb
+, @comma@
+upasaṅkamitvā absolutive
+bhagavantaṃ noun
+abhivādetvā absolutive
+ekamantaṃ @sandhi@
+ekaṃ cardinal_adjective
+antaṃ noun
+nisīdi verb
+. @point@
+
+
+Gambhīro adjective
+cāyaṃ @sandhi@
+ca coordinative_conjunction
+ayaṃ demonstrative_pronoun
+, @comma@
+ānanda proper_noun
+, @comma@
+paṭiccasamuppādo noun
+gambhīrāvabhāso noun
+ca coordinative_conjunction
+. @point@
+
+
+Iti quotation_participle
+kho emphatic_particle
+, @comma@
+ānanda proper_noun
+, @comma@
+ime demonstrative_pronoun
+dve cardinal_adjective
+dhammā noun
+dvayena noun
+vedanāya noun
+ekasamosaraṇā noun
+bhavanti verb
+. @point@
+
+
+Ettāvatā adverb
+kho emphatic_particle
+, @comma@
+ānanda proper_noun
+, @comma@
+jāyetha verb
+vā coordinative_conjunction
+jīyetha verb
+vā coordinative_conjunction
+mīyetha verb
+vā coordinative_conjunction
+cavetha verb
+vā coordinative_conjunction
+upapajjetha verb
+vā coordinative_conjunction
+. @point@

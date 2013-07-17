@@ -2,7 +2,9 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -15,19 +17,22 @@ import java.util.Map.Entry;
  */
 public class Tagger {
 	
-	private Map<String, String> Patterns;
+	private List<String> patterns = new ArrayList<String>();
+	private List<String> tags = new ArrayList<String>();
+	private OutputWriter debug;
 	
 	
-	public Tagger(String patternFile) throws IOException {
+	public Tagger(String patternFile, OutputWriter debug) throws IOException {
 		
-		System.out.println("Initializing tagger from " + patternFile);
+		this.debug = debug;
+		
+		debug.println("Initializing tagger from " + patternFile);
 		
 		//get ready to read from file
 		FileInputStream input = new FileInputStream(patternFile);
 		InputStreamReader streamReader = new InputStreamReader(input, "UTF-8");
 		BufferedReader reader = new BufferedReader(streamReader);
 		
-		Patterns = new HashMap<String, String>();
 		int index;
 		String tag, pattern;
 		String line = reader.readLine();
@@ -46,16 +51,17 @@ public class Tagger {
 				tag = line.substring(0, index);
 				pattern = line.substring(index + 1);
 
-				System.out.println("Found a rule");
-				System.out.println("Tag: " + tag);
-				System.out.println("Pattern: " + pattern);
+				debug.println("Found a rule");
+				debug.println("Tag: " + tag);
+				debug.println("Pattern: " + pattern);
 
-				Patterns.put(pattern, tag);
+				patterns.add(pattern);
+				tags.add(tag);
 
 			}
 			
 			else {
-				System.out.println("ignoring: " + line);
+				debug.println("ignoring: " + line);
 			}
 
 			line = reader.readLine();
@@ -72,28 +78,33 @@ public class Tagger {
 		
 		token = token.toLowerCase();
 		
-		for(Entry<String, String> entry : Patterns.entrySet()) {
+		for(String pattern : patterns) {
 			
 			//first tag will be considered the right one, if there is ambiguity
 			//we conveniently ignore it for now
-			if(token.matches(entry.getKey())) {
-				return entry.getValue();
+			if(token.matches(pattern)) {
+				return tags.get(patterns.indexOf(pattern));
 			}
 
 		}
 
 		//TODO this is ugly
 		if(token.matches("(e)(.*)")) {
+			
+			int index = 0;
 
-			for(Entry<String, String> entry : Patterns.entrySet()) {
-
-				if(token.substring(1).matches(entry.getKey())) {
-					if (entry.getValue().contains("personal_pronoun")) {
+			for(String tag : tags){
+				if(tag.equals("personal_pronoun")){
+					if(token.substring(1).matches(patterns.get(index))){
+						
 						return "demonstrative_pronoun";
 					}
 				}
-
+				
+				index++;
+				
 			}
+			
 		}
 		
 		

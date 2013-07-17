@@ -249,6 +249,7 @@ public class Evaluator {
 	public void printAmbiguosWords(List<TaggedToken> taggedTokens){
 		
 		output.println("Ambiguous words and their tags in test data:");
+		output.println();
 		
 		for(Map.Entry<String, HashSet<String>> word : getAmbiguousWords(taggedTokens).entrySet()){
 			

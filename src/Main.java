@@ -25,7 +25,7 @@ public class Main {
 	public static void main(String[] args) throws IOException{
 		
 		//access the test data
-		FileInputStream input = new FileInputStream("pali-gold-utf-8.txt");
+		FileInputStream input = new FileInputStream("pali-goldstandard1-sandhi-resolved.txt");
 		InputStreamReader streamReader = new InputStreamReader(input, "UTF-8");
 		BufferedReader reader = new BufferedReader(streamReader);
 		
@@ -33,7 +33,7 @@ public class Main {
 		//TODO stop hardcoding file names
 		OutputWriter output = new OutputWriter("output.txt");
 		OutputWriter debug = new OutputWriter("debug.txt");
-		Tagger tagger = new Tagger("patterns.txt");
+		Tagger tagger = new Tagger("patterns.txt", debug);
 		Evaluator evaluator = new Evaluator(output, debug);
 		
 		String[] chars;
@@ -64,7 +64,7 @@ public class Main {
 				 */			
 				for(int i = 0; i<chars.length; i++) {
 					if(i>1) {
-						chars[1] += chars[i];
+						chars[1] += "_" +chars[i];
 					}
 				}
 				

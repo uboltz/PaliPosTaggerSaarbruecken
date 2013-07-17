@@ -1,6 +1,139 @@
+Initializing tagger from patterns.txt
+ignoring: ## This file contains regular expressions for POS-tagging.
+ignoring: ## Lines starting with ## are comments and will be ignored. Everything else has to be either
+ignoring: ## an empty line or a line containing a pos-tag and a regular expression seperated by a whitespace.
+ignoring: ## Everything else, including additional whitespaces, will most likely crash the tagger.
+ignoring: ## Regular expressions will be interpreted bei Java.lang.String and must be formatted accordingly.
+ignoring: 
+ignoring: 
+Found a rule
+Tag: relative_pronoun
+Pattern: yo|yaṃ|yena|yassa|yasmā|yamhā|yasmiṃ|yamhi|yā|yāya|yassā|yāyaṃ|ye|yehi|yebhi|yesaṃ|yesānaṃ|yesu|yāhi|yāsaṃ|yāsānaṃ|yāsu|yāni
+ignoring: 
+Found a rule
+Tag: interrogative_pronoun
+Pattern: |ko|kaṃ|kena|kassa|kasmā|kismā|kassa|kissa|kasmiṃ|kamhi|kismiṃ|kamhi|kā|kaṃ|kāya|kassā|kissā|kayaṃ|kissaṃ|kiṃ|ke|kehi|kebhi|kesaṃ|kesānaṃ|kesu|kāyo|kāhi|kāsaṃ|kāsānaṃ|kāsu|kim
+ignoring: 
+ignoring: 
+ignoring: ## e + declined pronoun: can't implement that rule here, going to have to do something in the
+ignoring: ## java code. Things are about to get ugly I guess.
+ignoring: 
+Found a rule
+Tag: demonstrative_pronoun
+Pattern: (ay)(aṃ|inā)
+Found a rule
+Tag: demonstrative_pronoun
+Pattern: (ima)(ṃ|sma|mhā|ssa|smiṃ|mhi)?
+Found a rule
+Tag: demonstrative_pronoun
+Pattern: (imi)(ssā|nā|ssāya|ssaṃ)
+Found a rule
+Tag: demonstrative_pronoun
+Pattern: (imā)(ya|saṃ|yaṃidaṃ|yo|hi|bhi|sānaṃ|ni)?
+Found a rule
+Tag: demonstrative_pronoun
+Pattern: (ime)(hi|bhi|saṃ|sānaṃ|su)?
+Found a rule
+Tag: demonstrative_pronoun
+Pattern: (a)(smā|mhā|ssa|smiṃ|ssā|ssāya|ssaṃ|nena|su|dussa|duṃ)
+Found a rule
+Tag: demonstrative_pronoun
+Pattern: (e)(hi|bhi|saṃ|sānaṃ|su)
+Found a rule
+Tag: demonstrative_pronoun
+Pattern: (ā)(saṃ)
+Found a rule
+Tag: demonstrative_pronoun
+Pattern: (amu)(ṃ|nā|smā|mhā|ssa|smiṃ|mhi|yā|ssā|ssaṃ|yaṃ|mū|yo)?
+Found a rule
+Tag: demonstrative_pronoun
+Pattern: (amū)(hi|bhi|saṃ|sānaṃ|su|ni)?
+ignoring: 
+ignoring: 
+Found a rule
+Tag: personal_pronoun
+Pattern: (a)(haṃ|mhe|mhehi|mhākaṃ|mhesu|mhā|sme|smākaṃ|mhākaṃ|mhebhi|smākaṃ|mhaṃ|smāsu|smesu)
+Found a rule
+Tag: personal_pronoun
+Pattern: (ma)(ṃ|yā|ma|yhaṃ|amaṃ|yi)
+Found a rule
+Tag: personal_pronoun
+Pattern: me
+Found a rule
+Tag: personal_pronoun
+Pattern: no
+Found a rule
+Tag: personal_pronoun
+Pattern: (s)(o|a|ā|e|ānaṃ)
+Found a rule
+Tag: personal_pronoun
+Pattern: (tva)(ṃ|yā|yi)
+Found a rule
+Tag: personal_pronoun
+Pattern: (ta)(ṃ|vaṃ|yā|va|yi|smā|mhā|to|ssa|smiṃ|mhi|daṃ|d|ssā|ssaṃ)?
+Found a rule
+Tag: personal_pronoun
+Pattern: (tā)(ya|saṃ|yaṃ|yo|bhi|sānaṃ|su|ni)?
+Found a rule
+Tag: personal_pronoun
+Pattern: (ti)(ssā|ssaṃ|ssāya)
+Found a rule
+Tag: personal_pronoun
+Pattern: (tu)(vaṃ|yhaṃ|mhaṃ|mhe|mhākaṃ|mhebhi|mhaṃ|mhehi|mhesu)
+Found a rule
+Tag: personal_pronoun
+Pattern: (te)(na|hi|bhi|saṃ|sānaṃ|su)?
+Found a rule
+Tag: personal_pronoun
+Pattern: vo
+ignoring: 
+ignoring: 
+Found a rule
+Tag: verb
+Pattern: (.*)(ssāmhase|ssamhase|eyyāmhe|eyyātha|eyyavho|ssāmase|ssaavhe)
+Found a rule
+Tag: verb
+Pattern: (.*)(eyyama|eyyāmi|eyyāsi|eyyati|sittha|ssamhā|ssāmhe|ssamhe|ssaṃsu|ssante|ssanti|ssavhe|ssiṃsu|ssatha)
+Found a rule
+Tag: verb
+Pattern: (.*)(attha|emase|emasi|eyyaṃ|eyyuṃ|hanti|hatha|hinti|issaṃ|ittha|ittho|mhase|mhasa)
+Found a rule
+Tag: verb
+Pattern: (.*)(simhā|simha|siṃsu|sisuṃ|ssare|ssase|ssasi|ssate|ssati|ssāmi|ssāma|tthuṃ)
+Found a rule
+Tag: verb
+Pattern: (.*)(amha|amhā|atha|eraṃ|etha|etho|eyya|eyyu|hāma|hāmi|hasi|hati|hisi|hiti|imha|imhā|imhe|iṃsu)
+Found a rule
+Tag: verb
+Pattern: (.*)(iruṃ|isaṃ|issa|isuṃ|ivho|mahe|mase|ntaṃ|ttha|ssaṃ|ssām|thaṃ|vham)
+Found a rule
+Tag: verb
+Pattern: (.*)(āma|asi|ema|emu|mha|mhā|mhe|mse|ṃsu|nte|nti|ntu|ruṃ|sim|ssā|ssa|sse|ssu|suṃ|taṃ|tha|vhe|vho)
+ignoring: 
+ignoring: ## these are so short that they create lots of false positives
+Found a rule
+Tag: verb
+Pattern: (.*)(hi|ma|mi|re|se|si|ti|tu|te|iṃ|aṃ)
+Found a rule
+Tag: verb
+Pattern: (.*)(ī|aṃ|e|ṃ|o|ā|u|ū)
+ignoring: 
+ignoring: 
+ignoring: ## Forms of "to be"
+Found a rule
+Tag: verb
+Pattern: (.*)(asmi|asmhi|asi|atthi|āhi|atthu|assaṃ|assa|siyaṃ|siyā|asmā|amhā|attha)
+Found a rule
+Tag: verb
+Pattern: (.*)(santi|santu|assāma|assatha|assu|siyuṃ|siyaṃsu|homi|hosi|hoti|hohi|hotu)
+Found a rule
+Tag: verb
+Pattern: (.*)(huveyyaṃ|huveyyāsi|huveyyāti|homa|hotha|honti|hontu|huveyyuṃ|huveyyāma|huveyyātha)
 
-Line: ﻿' @quote@
-Token: ﻿'
+Line: ﻿
+
+Line: ' @quote@
+Token: '
 Tag(from file): @quote@
 Tagger ignores this token.
 
@@ -9,7 +142,7 @@ Token: '
 Tag(from file): @quote@
 Tagger ignores this token.
 
-Line: Kusāvatī proper_noun
+Line: Kusāvatī proper noun
 Token: Kusāvatī
 Tag(from file): proper_noun
 Tag(from tagger): verb
@@ -19,7 +152,7 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: ānanda proper_noun
+Line: ānanda proper noun
 Token: ānanda
 Tag(from file): proper_noun
 Tag(from tagger): unknown
@@ -44,7 +177,7 @@ Token: pākārehi
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: parikkhittā past_participle
+Line: parikkhittā past participle
 Token: parikkhittā
 Tag(from file): past_participle
 Tag(from tagger): verb
@@ -58,8 +191,6 @@ Line: . @point@
 Token: .
 Tag(from file): @point@
 Tagger ignores this token.
-
-Line: 
 
 Line: 
 
@@ -175,9 +306,7 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: Kusāvatiyā proper_noun
+Line: Kusāvatiyā proper noun
 Token: Kusāvatiyā
 Tag(from file): proper_noun
 Tag(from tagger): verb
@@ -187,7 +316,7 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: ānanda proper_noun
+Line: ānanda proper noun
 Token: ānanda
 Tag(from file): proper_noun
 Tag(from tagger): unknown
@@ -229,6 +358,235 @@ Tagger ignores this token.
 
 Line: 
 
+Line: Tassa pronoun
+Token: Tassa
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: ānanda proper noun
+Token: ānanda
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: itthiratanassa noun
+Token: itthiratanassa
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: kāyato noun
+Token: kāyato
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: candanagandho noun
+Token: candanagandho
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: vāyati verb
+Token: vāyati
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: mukhato noun
+Token: mukhato
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: uppalagandho noun
+Token: uppalagandho
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Tassa pronoun
+Token: Tassa
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: ānanda proper noun
+Token: ānanda
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: itthiratanassa noun
+Token: itthiratanassa
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: sīte noun
+Token: sīte
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: uṇhāni adjective
+Token: uṇhāni
+Tag(from file): adjective
+Tag(from tagger): unknown
+
+Line: gattāni noun
+Token: gattāni
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: honti verb
+Token: honti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: uṇhe noun
+Token: uṇhe
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: sītāni adjective
+Token: sītāni
+Tag(from file): adjective
+Tag(from tagger): unknown
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Rājā noun
+Token: Rājā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: mahāsudassano proper noun
+Token: mahāsudassano
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: evam adverb
+Token: evam
+Tag(from file): adverb
+Tag(from tagger): unknown
+
+Line: āha verb
+Token: āha
+Tag(from file): verb
+Tag(from tagger): unknown
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: alaṃ adverb
+Token: alaṃ
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: ettāvatā adverb
+Token: ettāvatā
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: gahapati noun
+Token: gahapati
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: kataṃ past passive participle
+Token: kataṃ
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: ettāvatā adverb
+Token: ettāvatā
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: gahapati noun
+Token: gahapati
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: pūjitaṃ past passive participle
+Token: pūjitaṃ
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: ettāvatā adverb
+Token: ettāvatā
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: gahapatī noun
+Token: gahapatī
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ti quotation particle
+Token: ti
+Tag(from file): quotation_particle
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
 Line: 
 
 Line: Rājā noun
@@ -241,7 +599,7 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: ānanda proper_noun
+Line: ānanda proper noun
 Token: ānanda
 Tag(from file): proper_noun
 Tag(from tagger): unknown
@@ -251,17 +609,17 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: mahāsudassano proper_noun
+Line: mahāsudassano proper noun
 Token: mahāsudassano
 Tag(from file): proper_noun
 Tag(from tagger): verb
 
-Line: imāya demonstrative_pronoun
+Line: imāya demonstrative pronoun
 Token: imāya
 Tag(from file): demonstrative_pronoun
 Tag(from tagger): demonstrative_pronoun
 
-Line: dutiyāya ordinal_adjective
+Line: dutiyāya ordinal adjective
 Token: dutiyāya
 Tag(from file): ordinal_adjective
 Tag(from tagger): unknown
@@ -288,8 +646,6 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: Rājā noun
 Token: Rājā
 Tag(from file): noun
@@ -300,7 +656,7 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: ānanda proper_noun
+Line: ānanda proper noun
 Token: ānanda
 Tag(from file): proper_noun
 Tag(from tagger): unknown
@@ -310,17 +666,17 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: mahāsudassano proper_noun
+Line: mahāsudassano proper noun
 Token: mahāsudassano
 Tag(from file): proper_noun
 Tag(from tagger): verb
 
-Line: imāya demonstrative_pronoun
+Line: imāya demonstrative pronoun
 Token: imāya
 Tag(from file): demonstrative_pronoun
 Tag(from tagger): demonstrative_pronoun
 
-Line: tatiyāya ordinal_adjective
+Line: tatiyāya ordinal adjective
 Token: tatiyāya
 Tag(from file): ordinal_adjective
 Tag(from tagger): unknown
@@ -346,6 +702,275 @@ Tag(from file): @point@
 Tagger ignores this token.
 
 Line: 
+
+Line: Seyyathā adverb
+Token: Seyyathā
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: pi coordinative conjunciton
+Token: pi
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: ānanda proper noun
+Token: ānanda
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: pitā noun
+Token: pitā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: puttānaṃ noun
+Token: puttānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: piyo adjective
+Token: piyo
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: hoti verb
+Token: hoti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: manāpo adjective
+Token: manāpo
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: evaṃ demonstrative adverb
+Token: evaṃ
+Tag(from file): demonstrative_adverb
+Tag(from tagger): verb
+
+Line: eva emphatic particle
+Token: eva
+Tag(from file): emphatic_particle
+Tag(from tagger): unknown
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: ānanda proper noun
+Token: ānanda
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: rājā noun
+Token: rājā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: mahāsudassano proper noun
+Token: mahāsudassano
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: brāhmaṇagahapatikānaṃ noun
+Token: brāhmaṇagahapatikānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: piyo adjective
+Token: piyo
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: ahosi verb
+Token: ahosi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: manāpo adjective
+Token: manāpo
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Veḷuriyamayassa adjective
+Token: Veḷuriyamayassa
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: sopānassa noun
+Token: sopānassa
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: veḷuriyamayā adjective
+Token: veḷuriyamayā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: thambhā noun
+Token: thambhā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ahesuṃ verb
+Token: ahesuṃ
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: phalikamayā adjective
+Token: phalikamayā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: sūciyo noun
+Token: sūciyo
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ca coordinative conjunciton
+Token: ca
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: uṇhīsaṃ noun
+Token: uṇhīsaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ca coordinative conjunciton
+Token: ca
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Tā pronoun
+Token: Tā
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: ānanda proper noun
+Token: ānanda
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: pokkharaṇiyo noun
+Token: pokkharaṇiyo
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: dvīhi ordinal adjective
+Token: dvīhi
+Tag(from file): ordinal_adjective
+Tag(from tagger): verb
+
+Line: vedikāhi noun
+Token: vedikāhi
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: parikkhittā past participle
+Token: parikkhittā
+Tag(from file): past_participle
+Tag(from tagger): verb
+
+Line: ahesuṃ verb
+Token: ahesuṃ
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: ekā cardinal adjecitve
+Token: ekā
+Tag(from file): cardinal_adjecitve
+Tag(from tagger): verb
+
+Line: vedikā noun
+Token: vedikā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: sovaṇṇamayā adjective
+Token: sovaṇṇamayā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: ekā cardinal adjecitve
+Token: ekā
+Tag(from file): cardinal_adjecitve
+Tag(from tagger): verb
+
+Line: rūpiyamayā adjective
+Token: rūpiyamayā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
 
 Line: 
 
@@ -374,9 +999,9 @@ Token: tālo
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: ṭhito past_participle
+Line: ṭhito past passive participle
 Token: ṭhito
-Tag(from file): past_participle
+Tag(from file): past_passive_participle
 Tag(from tagger): verb
 
 Line: ahosi verb
@@ -392,7 +1017,7 @@ Tagger ignores this token.
 Line: tassa pronoun
 Token: tassa
 Tag(from file): pronoun
-Tag(from tagger): verb
+Tag(from tagger): personal_pronoun
 
 Line: sovaṇṇamayo adjective
 Token: sovaṇṇamayo
@@ -419,9 +1044,9 @@ Token: pattāni
 Tag(from file): noun
 Tag(from tagger): unknown
 
-Line: ca coordinative_conjunction
+Line: ca coordinative conjunciton
 Token: ca
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: phalāni noun
@@ -429,9 +1054,9 @@ Token: phalāni
 Tag(from file): noun
 Tag(from tagger): unknown
 
-Line: ca coordinative_conjunction
+Line: ca coordinative conjunciton
 Token: ca
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: . @point@
@@ -441,24 +1066,285 @@ Tagger ignores this token.
 
 Line: 
 
+Line: Veḷuriyamayassa adjective
+Token: Veḷuriyamayassa
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: kūṭāgārassa noun
+Token: kūṭāgārassa
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: dvāre noun
+Token: dvāre
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: phalikamayo adjective
+Token: phalikamayo
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: tālo noun
+Token: tālo
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ṭhito past passive participle
+Token: ṭhito
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: ahosi verb
+Token: ahosi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: tassa pronoun
+Token: tassa
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: phalikamayo adjective
+Token: phalikamayo
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: khandho noun
+Token: khandho
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: veḷuriyamayāni adjective
+Token: veḷuriyamayāni
+Tag(from file): adjective
+Tag(from tagger): unknown
+
+Line: pattāni noun
+Token: pattāni
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: ca coordinative conjunciton
+Token: ca
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: phalāni noun
+Token: phalāni
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: ca coordinative conjunciton
+Token: ca
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
 Line: 
 
-Line: Taṃ personal_pronoun
+Line: Evaṃ demonstrative adverb
+Token: Evaṃ
+Tag(from file): demonstrative_adverb
+Tag(from tagger): verb
+
+Line: aniccā adjective
+Token: aniccā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: ānanda proper noun
+Token: ānanda
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: saṅkhārā noun
+Token: saṅkhārā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ; @semicolon@
+Token: ;
+Tag(from file): @semicolon@
+Tagger ignores this token.
+
+Line: evaṃ demonstrative adverb
+Token: evaṃ
+Tag(from file): demonstrative_adverb
+Tag(from tagger): verb
+
+Line: addhuvā adjective
+Token: addhuvā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: @comma@
+
+Line: ānanda proper noun
+Token: ānanda
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: saṅkhārā noun
+Token: saṅkhārā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ; @semicolon@
+Token: ;
+Tag(from file): @semicolon@
+Tagger ignores this token.
+
+Line: evaṃ demonstrative adverb
+Token: evaṃ
+Tag(from file): demonstrative_adverb
+Tag(from tagger): verb
+
+Line: anassāsikā adjective
+Token: anassāsikā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: ānanda proper noun
+Token: ānanda
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: saṅkhārā noun
+Token: saṅkhārā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Evaṃ demonstrative adverb
+Token: Evaṃ
+Tag(from file): demonstrative_adverb
+Tag(from tagger): verb
+
+Line: vutte past participle
+Token: vutte
+Tag(from file): past_participle
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: rājā noun
+Token: rājā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: māgadho proper noun
+Token: māgadho
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: ajātasattu proper noun
+Token: ajātasattu
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: vedehiputto proper noun
+Token: vedehiputto
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: tuṇhī adjective
+Token: tuṇhī
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: ahosi verb
+Token: ahosi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Taṃ personal pronoun
 Token: Taṃ
 Tag(from file): personal_pronoun
-Tag(from tagger): verb
+Tag(from tagger): personal_pronoun
 
 Line: devo noun
 Token: devo
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: pakudhaṃ proper_noun
+Line: pakudhaṃ proper noun
 Token: pakudhaṃ
 Tag(from file): proper_noun
 Tag(from tagger): verb
 
-Line: kaccāyanaṃ proper_noun
+Line: kaccāyanaṃ proper noun
 Token: kaccāyanaṃ
 Tag(from file): proper_noun
 Tag(from tagger): verb
@@ -475,12 +1361,87 @@ Tagger ignores this token.
 
 Line: 
 
+Line: Tena pronoun
+Token: Tena
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: samayena noun
+Token: samayena
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: jīvako proper noun
+Token: jīvako
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: komārabhacco noun
+Token: komārabhacco
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: rañño noun
+Token: rañño
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: māgadhassa proper noun
+Token: māgadhassa
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: ajātasattussa proper noun
+Token: ajātasattussa
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: vedehiputtassa proper noun
+Token: vedehiputtassa
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: avidūre noun
+Token: avidūre
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: tuṇhībhūto past participle
+Token: tuṇhībhūto
+Tag(from file): past_participle
+Tag(from tagger): verb
+
+Line: nisinno past participle
+Token: nisinno
+Tag(from file): past_participle
+Tag(from tagger): verb
+
+Line: hoti verb
+Token: hoti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
 Line: 
 
 Line: Taṃ pronoun
 Token: Taṃ
 Tag(from file): pronoun
-Tag(from tagger): verb
+Tag(from tagger): personal_pronoun
 
 Line: devo noun
 Token: devo
@@ -504,8 +1465,6 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: Natthi verb
 Token: Natthi
 Tag(from file): verb
@@ -521,8 +1480,13 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: natthi verb
-Token: natthi
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: atthi verb
+Token: atthi
 Tag(from file): verb
 Tag(from tagger): verb
 
@@ -573,17 +1537,15 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: So personal_pronoun
+Line: So pronoun
 Token: So
-Tag(from file): personal_pronoun
-Tag(from tagger): verb
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
 
 Line: taṃ pronoun
 Token: taṃ
 Tag(from file): pronoun
-Tag(from tagger): verb
+Tag(from tagger): personal_pronoun
 
 Line: dhammaṃ noun
 Token: dhammaṃ
@@ -617,12 +1579,10 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: So personal_pronoun
+Line: So pronoun
 Token: So
-Tag(from file): personal_pronoun
-Tag(from tagger): verb
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
 
 Line: tena pronoun
 Token: tena
@@ -634,14 +1594,14 @@ Token: saddhāpaṭilābhena
 Tag(from file): noun
 Tag(from tagger): unknown
 
-Line: samannāgato past_participle
+Line: samannāgato past participle
 Token: samannāgato
 Tag(from file): past_participle
 Tag(from tagger): verb
 
-Line: iti quotation_participle
+Line: iti quotation particle
 Token: iti
-Tag(from file): quotation_participle
+Tag(from file): quotation_particle
 Tag(from tagger): verb
 
 Line: paṭisañcikkhati verb
@@ -691,16 +1651,14 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: Naccagītavāditavisūkadassanā noun
 Token: Naccagītavāditavisūkadassanā
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: paṭivirato past_participle
+Line: paṭivirato past passive participle
 Token: paṭivirato
-Tag(from file): past_participle
+Tag(from file): past_passive_participle
 Tag(from tagger): verb
 
 Line: hoti verb
@@ -712,8 +1670,6 @@ Line: . @point@
 Token: .
 Tag(from file): @point@
 Tagger ignores this token.
-
-Line: 
 
 Line: 
 
@@ -722,9 +1678,9 @@ Token: Mālāgandhavilepanadhāraṇamaṇḍanavibhūsanaṭṭhānā
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: paṭivirato past_participle
+Line: paṭivirato past passive participle
 Token: paṭivirato
-Tag(from file): past_participle
+Tag(from file): past_passive_participle
 Tag(from tagger): verb
 
 Line: hoti verb
@@ -736,8 +1692,6 @@ Line: . @point@
 Token: .
 Tag(from file): @point@
 Tagger ignores this token.
-
-Line: 
 
 Line: 
 
@@ -746,9 +1700,9 @@ Token: Uccāsayanamahāsayanā
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: paṭivirato past_participle
+Line: paṭivirato past passive participle
 Token: paṭivirato
-Tag(from file): past_participle
+Tag(from file): past_passive_participle
 Tag(from tagger): verb
 
 Line: hoti verb
@@ -763,14 +1717,12 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: Upāsakaṃ noun
 Token: Upāsakaṃ
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: maṃ personal_pronoun
+Line: maṃ personal pronoun
 Token: maṃ
 Tag(from file): personal_pronoun
 Tag(from tagger): personal_pronoun
@@ -790,7 +1742,7 @@ Token: ajjatagge
 Tag(from file): adverb
 Tag(from tagger): verb
 
-Line: pāṇupetaṃ past_participle
+Line: pāṇupetaṃ past participle
 Token: pāṇupetaṃ
 Tag(from file): past_participle
 Tag(from tagger): verb
@@ -800,7 +1752,7 @@ Token: saraṇaṃ
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: gataṃ past_participle
+Line: gataṃ past participle
 Token: gataṃ
 Tag(from file): past_participle
 Tag(from tagger): verb
@@ -812,19 +1764,17 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: Evaṃ demonstrative_adver
+Line: Evaṃ demonstrative adverb
 Token: Evaṃ
-Tag(from file): demonstrative_adver
+Tag(from file): demonstrative_adverb
 Tag(from tagger): verb
 
-Line: me personal_pronoun
+Line: me personal pronoun
 Token: me
 Tag(from file): personal_pronoun
 Tag(from tagger): personal_pronoun
 
-Line: sutaṃ past_participle
+Line: sutaṃ past participle
 Token: sutaṃ
 Tag(from file): past_participle
 Tag(from tagger): verb
@@ -844,7 +1794,7 @@ Token: bhagavā
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: kosambiyaṃ proper_noun
+Line: kosambiyaṃ proper noun
 Token: kosambiyaṃ
 Tag(from file): proper_noun
 Tag(from tagger): verb
@@ -854,7 +1804,7 @@ Token: viharati
 Tag(from file): verb
 Tag(from tagger): verb
 
-Line: ghositārāme proper_noun
+Line: ghositārāme proper noun
 Token: ghositārāme
 Tag(from file): proper_noun
 Tag(from tagger): verb
@@ -865,6 +1815,314 @@ Tag(from file): @point@
 Tagger ignores this token.
 
 Line: 
+
+Line: Ye relative pronoun
+Token: Ye
+Tag(from file): relative_pronoun
+Tag(from tagger): relative_pronoun
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bho noun
+Token: bho
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: keci indefinite pronoun
+Token: keci
+Tag(from file): indefinite_pronoun
+Tag(from tagger): unknown
+
+Line: samaṇā noun
+Token: samaṇā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: vā coordinative conjunciton
+Token: vā
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: brāhmaṇā noun
+Token: brāhmaṇā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: vā coordinative conjunciton
+Token: vā
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: amhākaṃ personal pronoun
+Token: amhākaṃ
+Tag(from file): personal_pronoun
+Tag(from tagger): personal_pronoun
+
+Line: gāmakhettaṃ noun
+Token: gāmakhettaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: āgacchanti verb
+Token: āgacchanti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: atithī noun
+Token: atithī
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: no personal pronoun
+Token: no
+Tag(from file): personal_pronoun
+Tag(from tagger): personal_pronoun
+
+Line: te demonstrative personal pronoun
+Token: te
+Tag(from file): demonstrative_personal_pronoun
+Tag(from tagger): personal_pronoun
+
+Line: honti verb
+Token: honti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Imesaṃ demonstrative pronoun
+Token: Imesaṃ
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): demonstrative_pronoun
+
+Line: hi emphatic particle
+Token: hi
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bho noun
+Token: bho
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: gotama proper noun
+Token: gotama
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: catunnaṃ ordinal adjective
+Token: catunnaṃ
+Tag(from file): ordinal_adjective
+Tag(from tagger): verb
+
+Line: aṅgānaṃ noun
+Token: aṅgānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: mante noun
+Token: mante
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ṭhapayāma verb
+Token: ṭhapayāma
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Kiṃ interrogative pronoun
+Token: Kiṃ
+Tag(from file): interrogative_pronoun
+Tag(from tagger): interrogative_pronoun
+
+Line: hi emphatic particle
+Token: hi
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: mantā noun
+Token: mantā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: karissanti verb
+Token: karissanti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Imesaṃ demonstrative pronoun
+Token: Imesaṃ
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): demonstrative_pronoun
+
+Line: hi emphatic particle
+Token: hi
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bho noun
+Token: bho
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: gotama proper noun
+Token: gotama
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: tiṇṇaṃ ordinal adjective
+Token: tiṇṇaṃ
+Tag(from file): ordinal_adjective
+Tag(from tagger): verb
+
+Line: aṅgānaṃ noun
+Token: aṅgānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: jātiṃ noun
+Token: jātiṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ṭhapayāma verb
+Token: ṭhapayāma
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Na negation particle
+Token: Na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: ahaṃ pronoun
+Token: ahaṃ
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bho noun
+Token: bho
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: apavadāmi verb
+Token: apavadāmi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: vaṇṇaṃ noun
+Token: vaṇṇaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: vā coordinative conjunciton
+Token: vā
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: mante noun
+Token: mante
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: vā coordinative conjunciton
+Token: vā
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: jātiṃ noun
+Token: jātiṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: vā coordinative conjunciton
+Token: vā
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: ti quotation particle
+Token: ti
+Tag(from file): quotation_particle
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
 
 Line: 
 
@@ -890,6 +2148,56 @@ Tagger ignores this token.
 
 Line: 
 
+Line: Yattha preposition
+Token: Yattha
+Tag(from file): preposition
+Tag(from tagger): verb
+
+Line: sīlaṃ noun
+Token: sīlaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: tattha preposition
+Token: tattha
+Tag(from file): preposition
+Tag(from tagger): verb
+
+Line: paññā noun
+Token: paññā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: yattha preposition
+Token: yattha
+Tag(from file): preposition
+Tag(from tagger): verb
+
+Line: paññā noun
+Token: paññā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: tattha preposition
+Token: tattha
+Tag(from file): preposition
+Tag(from tagger): verb
+
+Line: sīlaṃ noun
+Token: sīlaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
 Line: 
 
 Line: Upāsakaṃ noun
@@ -897,7 +2205,7 @@ Token: Upāsakaṃ
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: maṃ personal_pronoun
+Line: maṃ personal pronoun
 Token: maṃ
 Tag(from file): personal_pronoun
 Tag(from tagger): personal_pronoun
@@ -907,7 +2215,7 @@ Token: bhavaṃ
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: gotamo proper_noun
+Line: gotamo proper noun
 Token: gotamo
 Tag(from file): proper_noun
 Tag(from tagger): verb
@@ -922,7 +2230,7 @@ Token: ajjatagge
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: pāṇupetaṃ past_participle
+Line: pāṇupetaṃ past participle
 Token: pāṇupetaṃ
 Tag(from file): past_participle
 Tag(from tagger): verb
@@ -932,7 +2240,7 @@ Token: saraṇaṃ
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: gataṃ past_participle
+Line: gataṃ past participle
 Token: gataṃ
 Tag(from file): past_participle
 Tag(from tagger): verb
@@ -942,12 +2250,12 @@ Token: Adhivāsetu
 Tag(from file): verb
 Tag(from tagger): verb
 
-Line: ca coordinative_conjunction
+Line: ca coordinative conjunciton
 Token: ca
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
-Line: me personal_pronoun
+Line: me personal pronoun
 Token: me
 Tag(from file): personal_pronoun
 Tag(from tagger): personal_pronoun
@@ -957,7 +2265,7 @@ Token: bhavaṃ
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: gotamo proper_noun
+Line: gotamo proper noun
 Token: gotamo
 Tag(from file): proper_noun
 Tag(from tagger): verb
@@ -982,9 +2290,9 @@ Token: bhikkhusaṅghenā
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: ti quotation_participle
+Line: ti quotation particle
 Token: ti
-Tag(from file): quotation_participle
+Tag(from file): quotation_particle
 Tag(from tagger): verb
 
 Line: . @point@
@@ -994,19 +2302,17 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: Tassa pronoun
 Token: Tassa
 Tag(from file): pronoun
-Tag(from tagger): verb
+Tag(from tagger): personal_pronoun
 
-Line: te personal_pronoun
+Line: te personal pronoun
 Token: te
 Tag(from file): personal_pronoun
-Tag(from tagger): verb
+Tag(from tagger): personal_pronoun
 
-Line: mayaṃ personal_pronoun
+Line: mayaṃ personal pronoun
 Token: mayaṃ
 Tag(from file): personal_pronoun
 Tag(from tagger): verb
@@ -1021,7 +2327,7 @@ Token: cakkavattivattaṃ
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: puṭṭhā past_passive_participle
+Line: puṭṭhā past passive participle
 Token: puṭṭhā
 Tag(from file): past_passive_participle
 Tag(from tagger): verb
@@ -1031,17 +2337,15 @@ Token: byākarissāmā
 Tag(from file): verb
 Tag(from tagger): verb
 
-Line: ti quotation_participle
+Line: ti quotation particle
 Token: ti
-Tag(from file): quotation_participle
+Tag(from file): quotation_particle
 Tag(from tagger): verb
 
 Line: . @point@
 Token: .
 Tag(from file): @point@
 Tagger ignores this token.
-
-Line: 
 
 Line: 
 
@@ -1060,7 +2364,7 @@ Token: khattiyassa
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: muddhābhisittassa past_passive_participle
+Line: muddhābhisittassa past passive participle
 Token: muddhābhisittassa
 Tag(from file): past_passive_participle
 Tag(from tagger): verb
@@ -1075,10 +2379,10 @@ Token: '
 Tag(from file): @quote@
 Tagger ignores this token.
 
-Line: ayaṃ demonstrative_pronoun
+Line: ayaṃ demonstrative pronoun
 Token: ayaṃ
 Tag(from file): demonstrative_pronoun
-Tag(from tagger): verb
+Tag(from tagger): demonstrative_pronoun
 
 Line: , @comma@
 Token: ,
@@ -1105,12 +2409,12 @@ Token: paresaṃ
 Tag(from file): adjective
 Tag(from tagger): verb
 
-Line: adinnaṃ past_passive_participle
+Line: adinnaṃ past passive participle
 Token: adinnaṃ
 Tag(from file): past_passive_participle
 Tag(from tagger): verb
 
-Line: theyyasaṅkhātaṃ past_passive_participle
+Line: theyyasaṅkhātaṃ past passive participle
 Token: theyyasaṅkhātaṃ
 Tag(from file): past_passive_participle
 Tag(from tagger): verb
@@ -1120,9 +2424,9 @@ Token: ādiyī
 Tag(from file): verb
 Tag(from tagger): verb
 
-Line: ti quotation_participle
+Line: ti quotation particle
 Token: ti
-Tag(from file): quotation_participle
+Tag(from file): quotation_particle
 Tag(from tagger): verb
 
 Line: . @point@
@@ -1132,9 +2436,119 @@ Tagger ignores this token.
 
 Line: 
 
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: Atha coordinative conjunciton
+Token: Atha
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: tesaṃ personal pronoun
+Token: tesaṃ
+Tag(from file): personal_pronoun
+Tag(from tagger): personal_pronoun
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhikkhave noun
+Token: bhikkhave
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: sattānaṃ noun
+Token: sattānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: evaṃ demonstrative adverb
+Token: evaṃ
+Tag(from file): demonstrative_adverb
+Tag(from tagger): verb
+
+Line: bhavissati verb
+Token: bhavissati
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: mayaṃ personal pronoun
+Token: mayaṃ
+Tag(from file): personal_pronoun
+Tag(from tagger): verb
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: akusalānaṃ adjective
+Token: akusalānaṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: dhammānaṃ noun
+Token: dhammānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: samādānahetu noun
+Token: samādānahetu
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: evarūpaṃ adjective
+Token: evarūpaṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: āyataṃ past passive participle
+Token: āyataṃ
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: ñātikkhayaṃ noun
+Token: ñātikkhayaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: pattā past passive participle
+Token: pattā
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
 Line: 
 
-Line: Kiṃ interrogative_pronoun
+Line: Kiṃ interrogative pronoun
 Token: Kiṃ
 Tag(from file): interrogative_pronoun
 Tag(from tagger): interrogative_pronoun
@@ -1153,8 +2567,6 @@ Line: . @point@
 Token: .
 Tag(from file): @point@
 Tagger ignores this token.
-
-Line: 
 
 Line: 
 
@@ -1183,12 +2595,12 @@ Token: manussesu
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: imasmiṃ demonstrative_pronoun
+Line: imasmiṃ demonstrative pronoun
 Token: imasmiṃ
 Tag(from file): demonstrative_pronoun
-Tag(from tagger): verb
+Tag(from tagger): demonstrative_pronoun
 
-Line: jambudīpe proper_noun
+Line: jambudīpe proper noun
 Token: jambudīpe
 Tag(from file): proper_noun
 Tag(from tagger): verb
@@ -1215,17 +2627,15 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: Attamanā adjective
 Token: Attamanā
 Tag(from file): adjective
 Tag(from tagger): verb
 
-Line: te personal_pronoun
+Line: te personal pronoun
 Token: te
 Tag(from file): personal_pronoun
-Tag(from tagger): verb
+Tag(from tagger): personal_pronoun
 
 Line: bhikkhū noun
 Token: bhikkhū
@@ -1254,14 +2664,12 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: Ayaṃ demonstrative_pronoun
+Line: Ayaṃ demonstrative pronoun
 Token: Ayaṃ
 Tag(from file): demonstrative_pronoun
-Tag(from tagger): verb
+Tag(from tagger): demonstrative_pronoun
 
-Line: paṭhamā ordinal_adjective
+Line: paṭhamā ordinal adjective
 Token: paṭhamā
 Tag(from file): ordinal_adjective
 Tag(from tagger): verb
@@ -1278,14 +2686,12 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: Ayaṃ demonstrative_pronoun
+Line: Ayaṃ demonstrative pronoun
 Token: Ayaṃ
 Tag(from file): demonstrative_pronoun
-Tag(from tagger): verb
+Tag(from tagger): demonstrative_pronoun
 
-Line: dutiyā ordinal_adjective
+Line: dutiyā ordinal adjective
 Token: dutiyā
 Tag(from file): ordinal_adjective
 Tag(from tagger): verb
@@ -1302,14 +2708,12 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: Ayaṃ pronoun
 Token: Ayaṃ
 Tag(from file): pronoun
-Tag(from tagger): verb
+Tag(from tagger): demonstrative_pronoun
 
-Line: tatiyā ordinal_adjective
+Line: tatiyā ordinal adjective
 Token: tatiyā
 Tag(from file): ordinal_adjective
 Tag(from tagger): verb
@@ -1326,14 +2730,12 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: Ayaṃ demonstrative_pronoun
+Line: Ayaṃ demonstrative pronoun
 Token: Ayaṃ
 Tag(from file): demonstrative_pronoun
-Tag(from tagger): verb
+Tag(from tagger): demonstrative_pronoun
 
-Line: paṭhamā ordinal_adjective
+Line: paṭhamā ordinal adjective
 Token: paṭhamā
 Tag(from file): ordinal_adjective
 Tag(from tagger): verb
@@ -1350,16 +2752,14 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: Atikkamma absolutive
 Token: Atikkamma
 Tag(from file): absolutive
 Tag(from tagger): verb
 
-Line: ca coordinative_conjunction
+Line: ca coordinative conjunciton
 Token: ca
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: purisassa noun
@@ -1389,14 +2789,12 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: Ayaṃ demonstrative_pronoun
+Line: Ayaṃ demonstrative pronoun
 Token: Ayaṃ
 Tag(from file): demonstrative_pronoun
-Tag(from tagger): verb
+Tag(from tagger): demonstrative_pronoun
 
-Line: dutiyā ordinal_adjective
+Line: dutiyā ordinal adjective
 Token: dutiyā
 Tag(from file): ordinal_adjective
 Tag(from tagger): verb
@@ -1413,16 +2811,14 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: Purisassa noun
 Token: Purisassa
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: ca coordinative_conjunction
+Line: ca coordinative conjunciton
 Token: ca
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: viññāṇasotaṃ noun
@@ -1445,7 +2841,7 @@ Token: ubhayato
 Tag(from file): adjective
 Tag(from tagger): verb
 
-Line: abbocchinnaṃ past_passive_participle
+Line: abbocchinnaṃ past passive participle
 Token: abbocchinnaṃ
 Tag(from file): past_passive_participle
 Tag(from tagger): verb
@@ -1465,14 +2861,14 @@ Token: patiṭṭhitañca
 Tag(from file): @sandhi@
 Tag(from tagger): unknown
 
-Line: patiṭṭhitaṃ past_passive_participle
+Line: patiṭṭhitaṃ past passive participle
 Token: patiṭṭhitaṃ
 Tag(from file): past_passive_participle
 Tag(from tagger): verb
 
-Line: ca coordinative_conjunction
+Line: ca coordinative conjunciton
 Token: ca
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: paraloke noun
@@ -1485,14 +2881,14 @@ Token: patiṭṭhitañca
 Tag(from file): @sandhi@
 Tag(from tagger): unknown
 
-Line: patiṭṭhitaṃ past_passive_participle
+Line: patiṭṭhitaṃ past passive participle
 Token: patiṭṭhitaṃ
 Tag(from file): past_passive_participle
 Tag(from tagger): verb
 
-Line: ca coordinative_conjunction
+Line: ca coordinative conjunciton
 Token: ca
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: . @point@
@@ -1502,9 +2898,7 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: etad demonstrative_pronoun
+Line: etad demonstrative pronoun
 Token: etad
 Tag(from file): demonstrative_pronoun
 Tag(from tagger): demonstrative_pronoun
@@ -1516,14 +2910,12 @@ Tag(from tagger): verb
 
 Line: 
 
-Line: 
-
-Line: Ayaṃ demonstrative_pronoun
+Line: Ayaṃ demonstrative pronoun
 Token: Ayaṃ
 Tag(from file): demonstrative_pronoun
-Tag(from tagger): verb
+Tag(from tagger): demonstrative_pronoun
 
-Line: tatiyā ordinal_adjective
+Line: tatiyā ordinal adjective
 Token: tatiyā
 Tag(from file): ordinal_adjective
 Tag(from tagger): verb
@@ -1540,16 +2932,14 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: Atikkamma absolutive
 Token: Atikkamma
 Tag(from file): absolutive
 Tag(from tagger): verb
 
-Line: ca coordinative_conjunction
+Line: ca coordinative conjunciton
 Token: ca
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: purisassa noun
@@ -1576,8 +2966,6 @@ Line: . @point@
 Token: .
 Tag(from file): @point@
 Tagger ignores this token.
-
-Line: 
 
 Line: 
 
@@ -1613,9 +3001,7 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: etad demonstrative_pronoun
+Line: etad demonstrative pronoun
 Token: etad
 Tag(from file): demonstrative_pronoun
 Tag(from tagger): demonstrative_pronoun
@@ -1627,16 +3013,220 @@ Tag(from tagger): verb
 
 Line: 
 
-Line: 
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
 
-Line: Te personal_pronoun
-Token: Te
-Tag(from file): personal_pronoun
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: Aparaṃ adverb
+Token: Aparaṃ
+Tag(from file): adverb
 Tag(from tagger): verb
 
-Line: ca coordinative_conjunction
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhante noun
+Token: bhante
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: etadānuttariyaṃ @sandhi@
+Token: etadānuttariyaṃ
+Tag(from file): @sandhi@
+Tag(from tagger): verb
+
+Line: etad demonstrative pronoun
+Token: etad
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): demonstrative_pronoun
+
+Line: ānuttariyaṃ noun
+Token: ānuttariyaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: yathā adverb
+Token: yathā
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: bhagavā noun
+Token: bhagavā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: dhammaṃ noun
+Token: dhammaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: deseti verb
+Token: deseti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: bhassasamācāre noun
+Token: bhassasamācāre
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Etadānuttariyaṃ @sandhi@
+Token: Etadānuttariyaṃ
+Tag(from file): @sandhi@
+Tag(from tagger): verb
+
+Line: etad demonstrative pronoun
+Token: etad
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): demonstrative_pronoun
+
+Line: ānuttariyaṃ noun
+Token: ānuttariyaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhante noun
+Token: bhante
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhassasamācāre noun
+Token: bhassasamācāre
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: Aparaṃ adverb
+Token: Aparaṃ
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhante noun
+Token: bhante
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: etadānuttariyaṃ @sandhi@
+Token: etadānuttariyaṃ
+Tag(from file): @sandhi@
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: yathā adverb
+Token: yathā
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: bhagavā noun
+Token: bhagavā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: dhammaṃ noun
+Token: dhammaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: deseti verb
+Token: deseti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: sassatavādesu noun
+Token: sassatavādesu
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Te personal pronoun
+Token: Te
+Tag(from file): personal_pronoun
+Tag(from tagger): personal_pronoun
+
+Line: ca coordinative conjunciton
 Token: ca
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: sattā noun
@@ -1691,28 +3281,24 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: seyyathā adverb
 Token: seyyathā
 Tag(from file): adverb
 Tag(from tagger): verb
 
-Line: api coordinative_conjunction
+Line: api coordinative conjunciton
 Token: api
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: 
 
-Line: 
-
-Line: Ayaṃ demonstrative_pronoun
+Line: Ayaṃ demonstrative pronoun
 Token: Ayaṃ
 Tag(from file): demonstrative_pronoun
-Tag(from tagger): verb
+Tag(from tagger): demonstrative_pronoun
 
-Line: paṭhamo ordinal_adjective
+Line: paṭhamo ordinal adjective
 Token: paṭhamo
 Tag(from file): ordinal_adjective
 Tag(from tagger): verb
@@ -1729,8 +3315,6 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: Pathaviyāpi @sandhi@
 Token: Pathaviyāpi
 Tag(from file): @sandhi@
@@ -1741,9 +3325,9 @@ Token: pathaviyā
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: api coordinative_conjunction
+Line: api coordinative conjunciton
 Token: api
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: ummujjanimujjaṃ noun
@@ -1761,9 +3345,14 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: seyyathāpi @sandhi@
-Token: seyyathāpi
-Tag(from file): @sandhi@
+Line: seyyathā adverb
+Token: seyyathā
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: pi coordinative conjunciton
+Token: pi
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: udake noun
@@ -1778,19 +3367,15 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: udake noun
 Token: udake
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: pi coordinative_conjunction
+Line: pi coordinative conjunciton
 Token: pi
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
-
-Line: 
 
 Line: 
 
@@ -1799,7 +3384,7 @@ Token: Udakepi
 Tag(from file): @sandhi@
 Tag(from tagger): unknown
 
-Line: abhijjamāne present_passive_participle
+Line: abhijjamāne present passive participle
 Token: abhijjamāne
 Tag(from file): present_passive_participle
 Tag(from tagger): verb
@@ -1814,9 +3399,14 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: seyyathāpi @sandhi@
-Token: seyyathāpi
-Tag(from file): @sandhi@
+Line: seyyathā adverb
+Token: seyyathā
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: pi coordinative conjunciton
+Token: pi
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: seyyathā adverb
@@ -1824,9 +3414,9 @@ Token: seyyathā
 Tag(from file): adverb
 Tag(from tagger): verb
 
-Line: api coordinative_conjunction
+Line: api coordinative conjunciton
 Token: api
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: pathaviyaṃ noun
@@ -1841,21 +3431,14 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: Ākāsepi @sandhi@
-Token: Ākāsepi
-Tag(from file): @sandhi@
-Tag(from tagger): unknown
-
 Line: Ākāse noun
 Token: Ākāse
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: pi coordinative_conjunction
+Line: pi coordinative conjunciton
 Token: pi
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: pallaṅkena noun
@@ -1873,9 +3456,14 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: seyyathāpi @sandhi@
-Token: seyyathāpi
-Tag(from file): @sandhi@
+Line: seyyathā adverb
+Token: seyyathā
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: pi coordinative conjunciton
+Token: pi
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: seyyathā adverb
@@ -1883,9 +3471,9 @@ Token: seyyathā
 Tag(from file): adverb
 Tag(from tagger): verb
 
-Line: api coordinative_conjunction
+Line: api coordinative conjunciton
 Token: api
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: pakkhī noun
@@ -1905,25 +3493,103 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: vihareyyaṃ verb
 Token: vihareyyaṃ
 Tag(from file): verb
 Tag(from tagger): verb
 
-Line: ti quotation_participle
+Line: ti quotation particle
 Token: ti
-Tag(from file): quotation_participle
+Tag(from file): quotation_particle
 Tag(from tagger): verb
 
 Line: 
 
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: Katamā interrogative pronoun
+Token: Katamā
+Tag(from file): interrogative_pronoun
+Tag(from tagger): verb
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhante noun
+Token: bhante
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: iddhi noun
+Token: iddhi
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: anāsavā adjective
+Token: anāsavā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: anupadhikā adjective
+Token: anupadhikā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: ariyā adjective
+Token: ariyā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: ti quotation particle
+Token: ti
+Tag(from file): quotation_particle
+Tag(from tagger): verb
+
+Line: vuccati verb
+Token: vuccati
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
 Line: 
 
-Line: Idha adverb
+Line: Idha preposition
 Token: Idha
-Tag(from file): adverb
+Tag(from file): preposition
 Tag(from tagger): unknown
 
 Line: , @comma@
@@ -1946,9 +3612,9 @@ Token: bhikkhu
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: sace conditional_particle?
+Line: sace conjunction
 Token: sace
-Tag(from file): conditional_particle?
+Tag(from file): conjunction
 Tag(from tagger): verb
 
 Line: ākaṅkhati verb
@@ -1986,9 +3652,9 @@ Token: vihareyyaṃ
 Tag(from file): verb
 Tag(from tagger): verb
 
-Line: ti quotation_participle
+Line: ti quotation particle
 Token: ti
-Tag(from file): quotation_participle
+Tag(from file): quotation_particle
 Tag(from tagger): verb
 
 Line: , @comma@
@@ -2001,9 +3667,9 @@ Token: appaṭikūlasaññī
 Tag(from file): adjective
 Tag(from tagger): verb
 
-Line: tattha adverb
+Line: tattha preposition
 Token: tattha
-Tag(from file): adverb
+Tag(from file): preposition
 Tag(from tagger): verb
 
 Line: viharati verb
@@ -2018,32 +3684,107 @@ Tagger ignores this token.
 
 Line: 
 
+Line: Sace conjunction
+Token: Sace
+Tag(from file): conjunction
+Tag(from tagger): verb
+
+Line: ākaṅkhati verb
+Token: ākaṅkhati
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: paṭikūle noun
+Token: paṭikūle
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ca coordinative conjunciton
+Token: ca
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: appaṭikūle noun
+Token: appaṭikūle
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ca coordinative conjunciton
+Token: ca
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: appaṭikūlasaññī adjective
+Token: appaṭikūlasaññī
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: vihareyya @sandhi@
+Token: vihareyya
+Tag(from file): @sandhi@
+Tag(from tagger): verb
+
+Line: nti @sandhi@
+Token: nti
+Tag(from file): @sandhi@
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: appaṭikūlasaññī adjective
+Token: appaṭikūlasaññī
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: tattha preposition
+Token: tattha
+Tag(from file): preposition
+Tag(from tagger): verb
+
+Line: viharati verb
+Token: viharati
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
 Line: 
 
-Line: Bhāradvājo proper_noun
+Line: Bhāradvājo proper noun
 Token: Bhāradvājo
 Tag(from file): proper_noun
 Tag(from tagger): verb
 
-Line: pi coordinative_conjunction
+Line: pi coordinative conjunciton
 Token: pi
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
-Line: ayaṃ demonstrative_pronoun
+Line: ayaṃ demonstrative pronoun
 Token: ayaṃ
 Tag(from file): demonstrative_pronoun
-Tag(from tagger): verb
+Tag(from tagger): demonstrative_pronoun
 
-Line: eva emphatic_particle
+Line: eva emphatic particle
 Token: eva
 Tag(from file): emphatic_particle
 Tag(from tagger): unknown
 
-Line: ayaṃ demonstrative_pronoun
+Line: ayaṃ demonstrative pronoun
 Token: ayaṃ
 Tag(from file): demonstrative_pronoun
-Tag(from tagger): verb
+Tag(from tagger): demonstrative_pronoun
 
 Line: añjasāyano noun
 Token: añjasāyano
@@ -2055,9 +3796,9 @@ Token: māṇavo
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: pi coordinative_conjunction
+Line: pi coordinative conjunciton
 Token: pi
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: tena pronoun
@@ -2072,14 +3813,226 @@ Tag(from tagger): verb
 
 Line: 
 
-Line: 
-
-Line: Atha coordinative_conjunction
-Token: Atha
-Tag(from file): coordinative_conjunction
+Line: Sace conjunction
+Token: Sace
+Tag(from file): conjunction
 Tag(from tagger): verb
 
-Line: kho emphatic_particle
+Line: ākaṅkhati verb
+Token: ākaṅkhati
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: paṭikūlañca @sandhi@
+Token: paṭikūlañca
+Tag(from file): @sandhi@
+Tag(from tagger): unknown
+
+Line: paṭikūlaṃ noun
+Token: paṭikūlaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ca coordinative conjunciton
+Token: ca
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: appaṭikūlañca @sandhi@
+Token: appaṭikūlañca
+Tag(from file): @sandhi@
+Tag(from tagger): unknown
+
+Line: appaṭikūlaṃ noun
+Token: appaṭikūlaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ca coordinative conjunciton
+Token: ca
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: tadubhayaṃ adjective
+Token: tadubhayaṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: abhinivajjetvā absolutive
+Token: abhinivajjetvā
+Tag(from file): absolutive
+Tag(from tagger): verb
+
+Line: upekkhako adjective
+Token: upekkhako
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: vihareyyaṃ verb
+Token: vihareyyaṃ
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: sato past passive participle
+Token: sato
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: sampajāno adjective
+Token: sampajāno
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: ti quotation particle
+Token: ti
+Tag(from file): quotation_particle
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: upekkhako adjective
+Token: upekkhako
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: tattha preposition
+Token: tattha
+Tag(from file): preposition
+Tag(from tagger): verb
+
+Line: viharati verb
+Token: viharati
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: sato past passive participle
+Token: sato
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: sampajāno adjective
+Token: sampajāno
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: eva emphatic particle
+Token: eva
+Tag(from file): emphatic_particle
+Tag(from tagger): unknown
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: asakkhi verb
+Token: asakkhi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: vāseṭṭho proper noun
+Token: vāseṭṭho
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: māṇavo noun
+Token: māṇavo
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: bhāradvājaṃ proper noun
+Token: bhāradvājaṃ
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: māṇavaṃ noun
+Token: māṇavaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: saññāpetuṃ infinitive
+Token: saññāpetuṃ
+Tag(from file): infinitive
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: asakkhi verb
+Token: asakkhi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: bhāradvājo proper noun
+Token: bhāradvājo
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: māṇavopi @sandhi@
+Token: māṇavopi
+Tag(from file): @sandhi@
+Tag(from tagger): unknown
+
+Line: vāseṭṭhaṃ proper noun
+Token: vāseṭṭhaṃ
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: māṇavaṃ noun
+Token: māṇavaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: saññāpetuṃ infinitive
+Token: saññāpetuṃ
+Tag(from file): infinitive
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Atha coordinative conjunciton
+Token: Atha
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: kho emphatic particle
 Token: kho
 Tag(from file): emphatic_particle
 Tag(from tagger): verb
@@ -2094,7 +4047,7 @@ Token: māṇavā
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: yena relative_pronoun
+Line: yena relative pronoun
 Token: yena
 Tag(from file): relative_pronoun
 Tag(from tagger): relative_pronoun
@@ -2141,6 +4094,56 @@ Tagger ignores this token.
 
 Line: 
 
+Line: Napi @sandhi@
+Token: Napi
+Tag(from file): @sandhi@
+Tag(from tagger): unknown
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: pi coordinative conjunciton
+Token: pi
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: kira emphatic particle
+Token: kira
+Tag(from file): emphatic_particle
+Tag(from tagger): unknown
+
+Line: tevijjānaṃ adjective
+Token: tevijjānaṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: brāhmaṇānaṃ noun
+Token: brāhmaṇānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ācariyapācariyehi noun
+Token: ācariyapācariyehi
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: brahmā proper noun
+Token: brahmā
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: sakkhidiṭṭho past passive participle
+Token: sakkhidiṭṭho
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
 Line: 
 
 Line: ' @quote@
@@ -2153,19 +4156,14 @@ Token: '
 Tag(from file): @quote@
 Tagger ignores this token.
 
-Line: Seyyathāpi @sandhi@
-Token: Seyyathāpi
-Tag(from file): @sandhi@
-Tag(from tagger): unknown
-
 Line: Seyyathā adverb
 Token: Seyyathā
 Tag(from file): adverb
 Tag(from tagger): verb
 
-Line: pi coordinative_conjunction
+Line: pi coordinative conjunciton
 Token: pi
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: , @comma@
@@ -2173,7 +4171,7 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: vāseṭṭha proper_noun
+Line: vāseṭṭha proper noun
 Token: vāseṭṭha
 Tag(from file): proper_noun
 Tag(from tagger): unknown
@@ -2188,9 +4186,9 @@ Token: puriso
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: evaṃ adverb
+Line: evaṃ demonstrative adverb
 Token: evaṃ
-Tag(from file): adverb
+Tag(from file): demonstrative_adverb
 Tag(from tagger): verb
 
 Line: vadeyya verb
@@ -2208,20 +4206,20 @@ Token: '
 Tag(from file): @quote@
 Tagger ignores this token.
 
-Line: ahaṃ personal_pronoun
+Line: ahaṃ pronoun
 Token: ahaṃ
-Tag(from file): personal_pronoun
-Tag(from tagger): verb
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
 
-Line: yā relative_personal_pronoun
+Line: yā relative personal pronoun
 Token: yā
 Tag(from file): relative_personal_pronoun
-Tag(from tagger): verb
+Tag(from tagger): relative_pronoun
 
-Line: imasmiṃ demonstrative_pronoun
+Line: imasmiṃ demonstrative pronoun
 Token: imasmiṃ
 Tag(from file): demonstrative_pronoun
-Tag(from tagger): verb
+Tag(from tagger): demonstrative_pronoun
 
 Line: janapade noun
 Token: janapade
@@ -2238,10 +4236,10 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: taṃ personal_pronoun
+Line: taṃ personal pronoun
 Token: taṃ
 Tag(from file): personal_pronoun
-Tag(from tagger): verb
+Tag(from tagger): personal_pronoun
 
 Line: icchāmi verb
 Token: icchāmi
@@ -2253,19 +4251,19 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: taṃ personal_pronoun
+Line: taṃ personal pronoun
 Token: taṃ
 Tag(from file): personal_pronoun
-Tag(from tagger): verb
+Tag(from tagger): personal_pronoun
 
 Line: kāmemī verb
 Token: kāmemī
 Tag(from file): verb
 Tag(from tagger): verb
 
-Line: ti quotation_participle
+Line: ti quotation particle
 Token: ti
-Tag(from file): quotation_participle
+Tag(from file): quotation_particle
 Tag(from tagger): verb
 
 Line: . @point@
@@ -2275,11 +4273,9 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: Cakkhuviññeyyā future_passiv_participle
+Line: Cakkhuviññeyyā future passive participle
 Token: Cakkhuviññeyyā
-Tag(from file): future_passiv_participle
+Tag(from file): future_passive_participle
 Tag(from tagger): verb
 
 Line: rūpā adjective
@@ -2287,12 +4283,12 @@ Token: rūpā
 Tag(from file): adjective
 Tag(from tagger): verb
 
-Line: iṭṭhā past_passive_participle
+Line: iṭṭhā past passive participle
 Token: iṭṭhā
 Tag(from file): past_passive_participle
 Tag(from tagger): verb
 
-Line: kantā past_passive_participle
+Line: kantā past passive participle
 Token: kantā
 Tag(from file): past_passive_participle
 Tag(from tagger): verb
@@ -2307,7 +4303,7 @@ Token: piyarūpā
 Tag(from file): adjective
 Tag(from tagger): verb
 
-Line: kāmūpasaṃhitā past_active_participle
+Line: kāmūpasaṃhitā past active participle
 Token: kāmūpasaṃhitā
 Tag(from file): past_active_participle
 Tag(from tagger): verb
@@ -2324,8 +4320,6 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: ' @quote@
 Token: '
 Tag(from file): @quote@
@@ -2336,19 +4330,14 @@ Token: '
 Tag(from file): @quote@
 Tagger ignores this token.
 
-Line: Seyyathāpi @sandhi@
-Token: Seyyathāpi
-Tag(from file): @sandhi@
-Tag(from tagger): unknown
-
-Line: seyyathā adverb
-Token: seyyathā
+Line: Seyyathā adverb
+Token: Seyyathā
 Tag(from file): adverb
 Tag(from tagger): verb
 
-Line: pi coordinative_conjunction
+Line: pi coordinative conjunciton
 Token: pi
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: , @comma@
@@ -2356,9 +4345,9 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: vāseṭṭha noun
+Line: vāseṭṭha proper noun
 Token: vāseṭṭha
-Tag(from file): noun
+Tag(from file): proper_noun
 Tag(from tagger): unknown
 
 Line: , @comma@
@@ -2366,12 +4355,12 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: ayaṃ demonstrative_pronoun
+Line: ayaṃ demonstrative pronoun
 Token: ayaṃ
 Tag(from file): demonstrative_pronoun
-Tag(from tagger): verb
+Tag(from tagger): demonstrative_pronoun
 
-Line: aciravatī proper_noun
+Line: aciravatī proper noun
 Token: aciravatī
 Tag(from file): proper_noun
 Tag(from tagger): verb
@@ -2396,7 +4385,7 @@ Token: samatittikā
 Tag(from file): adjective
 Tag(from tagger): verb
 
-Line: kākapeyyā past_passive_participle
+Line: kākapeyyā past passive participle
 Token: kākapeyyā
 Tag(from file): past_passive_participle
 Tag(from tagger): verb
@@ -2408,14 +4397,12 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: Ime demonstrative_pronoun
+Line: Ime demonstrative pronoun
 Token: Ime
 Tag(from file): demonstrative_pronoun
-Tag(from tagger): verb
+Tag(from tagger): demonstrative_pronoun
 
-Line: kho emphatic_particle
+Line: kho emphatic particle
 Token: kho
 Tag(from file): emphatic_particle
 Tag(from tagger): verb
@@ -2425,7 +4412,7 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: vāseṭṭha proper_noun
+Line: vāseṭṭha proper noun
 Token: vāseṭṭha
 Tag(from file): proper_noun
 Tag(from tagger): unknown
@@ -2435,9 +4422,9 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: pañca cardinal_adjective
+Line: pañca cardinal adjecitve
 Token: pañca
-Tag(from file): cardinal_adjective
+Tag(from file): cardinal_adjecitve
 Tag(from tagger): unknown
 
 Line: nīvaraṇā noun
@@ -2465,14 +4452,14 @@ Token: āvaraṇā
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: ti quotation_participle
+Line: ti quotation particle
 Token: ti
-Tag(from file): quotation_participle
+Tag(from file): quotation_particle
 Tag(from tagger): verb
 
-Line: pi coordinative_conjunction
+Line: pi coordinative conjunciton
 Token: pi
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: vuccanti verb
@@ -2495,14 +4482,14 @@ Token: nīvaraṇā
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: ti quotation_participle
+Line: ti quotation particle
 Token: ti
-Tag(from file): quotation_participle
+Tag(from file): quotation_particle
 Tag(from tagger): verb
 
-Line: pi coordinative_conjunction
+Line: pi coordinative conjunciton
 Token: pi
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: vuccanti verb
@@ -2525,14 +4512,14 @@ Token: onāhanā
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: ti quotation_participle
+Line: ti quotation particle
 Token: ti
-Tag(from file): quotation_participle
+Tag(from file): quotation_particle
 Tag(from tagger): verb
 
-Line: pi coordinative_conjunction
+Line: pi coordinative conjunciton
 Token: pi
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: vuccanti verb
@@ -2555,14 +4542,14 @@ Token: pariyonāhanā
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: ti quotation_participle
+Line: ti quotation particle
 Token: ti
-Tag(from file): quotation_participle
+Tag(from file): quotation_particle
 Tag(from tagger): verb
 
-Line: pi coordinative_conjunction
+Line: pi coordinative conjunciton
 Token: pi
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: vuccanti verb
@@ -2577,8 +4564,6 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: ' @quote@
 Token: '
 Tag(from file): @quote@
@@ -2589,12 +4574,12 @@ Token: '
 Tag(from file): @quote@
 Tagger ignores this token.
 
-Line: Imehi demonstrative_pronoun
+Line: Imehi demonstrative pronoun
 Token: Imehi
 Tag(from file): demonstrative_pronoun
-Tag(from tagger): verb
+Tag(from tagger): demonstrative_pronoun
 
-Line: kho emphatic_particle
+Line: kho emphatic particle
 Token: kho
 Tag(from file): emphatic_particle
 Tag(from tagger): verb
@@ -2604,9 +4589,9 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: vāseṭṭha noun
+Line: vāseṭṭha proper noun
 Token: vāseṭṭha
-Tag(from file): noun
+Tag(from file): proper_noun
 Tag(from tagger): unknown
 
 Line: , @comma@
@@ -2614,9 +4599,9 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: pañcahi cardinal_adjective
+Line: pañcahi cardinal adjecitve
 Token: pañcahi
-Tag(from file): cardinal_adjective
+Tag(from file): cardinal_adjecitve
 Tag(from tagger): verb
 
 Line: nīvaraṇehi noun
@@ -2634,22 +4619,22 @@ Token: brāhmaṇā
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: āvuṭā past_passive_participle
+Line: āvuṭā past passive participle
 Token: āvuṭā
 Tag(from file): past_passive_participle
 Tag(from tagger): verb
 
-Line: nivuṭā past_passive_participle
+Line: nivuṭā past passive participle
 Token: nivuṭā
 Tag(from file): past_passive_participle
 Tag(from tagger): verb
 
-Line: onaddhā past_passive_participle
+Line: onaddhā past passive participle
 Token: onaddhā
 Tag(from file): past_passive_participle
 Tag(from tagger): verb
 
-Line: pariyonaddhā past_passive_participle
+Line: pariyonaddhā past passive participle
 Token: pariyonaddhā
 Tag(from file): past_passive_participle
 Tag(from tagger): verb
@@ -2661,8 +4646,6 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: ' @quote@
 Token: '
 Tag(from file): @quote@
@@ -2673,12 +4656,12 @@ Token: '
 Tag(from file): @quote@
 Tagger ignores this token.
 
-Line: Iti quotation_participle
+Line: Iti quotation particle
 Token: Iti
-Tag(from file): quotation_participle
+Tag(from file): quotation_particle
 Tag(from tagger): verb
 
-Line: kira emphatic_particle
+Line: kira emphatic particle
 Token: kira
 Tag(from file): emphatic_particle
 Tag(from tagger): unknown
@@ -2688,7 +4671,7 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: vāseṭṭha proper_noun
+Line: vāseṭṭha proper noun
 Token: vāseṭṭha
 Tag(from file): proper_noun
 Tag(from tagger): unknown
@@ -2718,7 +4701,7 @@ Token: apariggaho
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: brahmā proper_noun
+Line: brahmā proper noun
 Token: brahmā
 Tag(from file): proper_noun
 Tag(from tagger): verb
@@ -2730,6 +4713,411 @@ Tagger ignores this token.
 
 Line: 
 
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: Idha preposition
+Token: Idha
+Tag(from file): preposition
+Tag(from tagger): unknown
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: te personal pronoun
+Token: te
+Tag(from file): personal_pronoun
+Tag(from tagger): personal_pronoun
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: vāseṭṭha proper noun
+Token: vāseṭṭha
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: tevijjā adjective
+Token: tevijjā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: brāhmaṇā adjective
+Token: brāhmaṇā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: āsīditvā absolutive
+Token: āsīditvā
+Tag(from file): absolutive
+Tag(from tagger): verb
+
+Line: saṃsīdanti verb
+Token: saṃsīdanti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: saṃsīditvā absolutive
+Token: saṃsīditvā
+Tag(from file): absolutive
+Tag(from tagger): verb
+
+Line: visāraṃ noun
+Token: visāraṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: pāpuṇanti verb
+Token: pāpuṇanti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: sukkhataraṃ adverb
+Token: sukkhataraṃ
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: maññe verb
+Token: maññe
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: taranti verb
+Token: taranti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Taṃ pronoun
+Token: Taṃ
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: enaṃ demonstrative pronoun
+Token: enaṃ
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): verb
+
+Line: tāvat adverb
+Token: tāvat
+Tag(from file): adverb
+Tag(from tagger): unknown
+
+Line: eva emphatic particle
+Token: eva
+Tag(from file): emphatic_particle
+Tag(from tagger): unknown
+
+Line: ca coordinative conjunciton
+Token: ca
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: ahaṃ pronoun
+Token: ahaṃ
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: brahmalokaṃ proper noun
+Token: brahmalokaṃ
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: ca coordinative conjunciton
+Token: ca
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: brahmalokagāminiṃ adjective
+Token: brahmalokagāminiṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: ca coordinative conjunciton
+Token: ca
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: Taṃ pronoun
+Token: Taṃ
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: ca coordinative conjunciton
+Token: ca
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: 
+
+Line: Tamenaṃ @sandhi@
+Token: Tamenaṃ
+Tag(from file): @sandhi@
+Tag(from tagger): verb
+
+Line: manasākaṭato proper noun
+Token: manasākaṭato
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: tāvadeva @sandhi@
+Token: tāvadeva
+Tag(from file): @sandhi@
+Tag(from tagger): unknown
+
+Line: avasaṭaṃ past passive participle
+Token: avasaṭaṃ
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: manasākaṭassa proper noun
+Token: manasākaṭassa
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: maggaṃ noun
+Token: maggaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: puccheyyuṃ verb
+Token: puccheyyuṃ
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Brahmānaṃ proper noun
+Token: Brahmānaṃ
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: cāhaṃ @sandhi@
+Token: cāhaṃ
+Tag(from file): @sandhi@
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: vāseṭṭha proper noun
+Token: vāseṭṭha
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: pajānāmi verb
+Token: pajānāmi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: brahmalokañca @sandhi@
+Token: brahmalokañca
+Tag(from file): @sandhi@
+Tag(from tagger): unknown
+
+Line: brahmalokagāminiñca @sandhi@
+Token: brahmalokagāminiñca
+Tag(from file): @sandhi@
+Tag(from tagger): unknown
+
+Line: paṭipadaṃ noun
+Token: paṭipadaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: yathā adverb
+Token: yathā
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: paṭipanno past passive participle
+Token: paṭipanno
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: ca coordinative conjunciton
+Token: ca
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: brahmalokaṃ proper noun
+Token: brahmalokaṃ
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: upapanno past passive participle
+Token: upapanno
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: tañca @sandhi@
+Token: tañca
+Tag(from file): @sandhi@
+Tag(from tagger): unknown
+
+Line: pajānāmī verb
+Token: pajānāmī
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: ti quotation particle
+Token: ti
+Tag(from file): quotation_particle
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Tathā adverb
+Token: Tathā
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: catutthaṃ ordinal adjective
+Token: catutthaṃ
+Tag(from file): ordinal_adjective
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: Seyyathā adverb
+Token: Seyyathā
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: pi coordinative conjunciton
+Token: pi
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: vāseṭṭha proper noun
+Token: vāseṭṭha
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: balavā adjective
+Token: balavā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: saṅkhadhamo noun
+Token: saṅkhadhamo
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: appakasirena noun
+Token: appakasirena
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: eva emphatic particle
+Token: eva
+Tag(from file): emphatic_particle
+Tag(from tagger): unknown
+
+Line: catuddisā noun
+Token: catuddisā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: viññāpeyya verb
+Token: viññāpeyya
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
 Line: 
 
 Line: Bhagavā noun
@@ -2737,12 +5125,17 @@ Token: Bhagavā
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: etadavoca @sandhi@
-Token: etadavoca
+Line: etad @sandhi@
+Token: etad
 Tag(from file): @sandhi@
+Tag(from tagger): demonstrative_pronoun
+
+Line: avoca verb
+Token: avoca
+Tag(from file): verb
 Tag(from tagger): unknown
 
-Line: etad demonstrative_pronoun
+Line: etad demonstrative pronoun
 Token: etad
 Tag(from file): demonstrative_pronoun
 Tag(from tagger): demonstrative_pronoun
@@ -2759,8 +5152,6 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: ' @quote@
 Token: '
 Tag(from file): @quote@
@@ -2771,9 +5162,9 @@ Token: '
 Tag(from file): @quote@
 Tagger ignores this token.
 
-Line: Dvattiṃsimāni cardinal_adjective
+Line: Dvattiṃsimāni cardinal adjecitve
 Token: Dvattiṃsimāni
-Tag(from file): cardinal_adjective
+Tag(from file): cardinal_adjecitve
 Tag(from tagger): unknown
 
 Line: , @comma@
@@ -2806,12 +5197,12 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: yehi relative_pronoun
+Line: yehi relative pronoun
 Token: yehi
 Tag(from file): relative_pronoun
-Tag(from tagger): verb
+Tag(from tagger): relative_pronoun
 
-Line: samannāgatassa past_passive_participle
+Line: samannāgatassa past passive participle
 Token: samannāgatassa
 Tag(from file): past_passive_participle
 Tag(from tagger): verb
@@ -2826,12 +5217,12 @@ Token: dveva
 Tag(from file): @sandhi@
 Tag(from tagger): unknown
 
-Line: dvi cardinal_adjective
+Line: dvi cardinal adjecitve
 Token: dvi
-Tag(from file): cardinal_adjective
+Tag(from file): cardinal_adjecitve
 Tag(from tagger): unknown
 
-Line: eva emphatic_particle
+Line: eva emphatic particle
 Token: eva
 Tag(from file): emphatic_particle
 Tag(from tagger): unknown
@@ -2858,6 +5249,143 @@ Tagger ignores this token.
 
 Line: 
 
+Line: Sace conjunction
+Token: Sace
+Tag(from file): conjunction
+Tag(from tagger): verb
+
+Line: agāraṃ noun
+Token: agāraṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ajjhāvasati verb
+Token: ajjhāvasati
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: rājā noun
+Token: rājā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: hoti verb
+Token: hoti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: cakkavattī noun
+Token: cakkavattī
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: dhammiko adjective
+Token: dhammiko
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: dhammarājā noun
+Token: dhammarājā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: cāturanto adjective
+Token: cāturanto
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: vijitāvī adjective
+Token: vijitāvī
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: janapadatthāvariyappatto past passive participle
+Token: janapadatthāvariyappatto
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: sattaratanasamannāgato past passive participle
+Token: sattaratanasamannāgato
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Sace conjunction
+Token: Sace
+Tag(from file): conjunction
+Tag(from tagger): verb
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: agārasmā noun
+Token: agārasmā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: anagāriyaṃ noun
+Token: anagāriyaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: pabbajati verb
+Token: pabbajati
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: arahaṃ noun
+Token: arahaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: hoti verb
+Token: hoti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: sammāsambuddho noun
+Token: sammāsambuddho
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: loke noun
+Token: loke
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: vivaṭṭacchado adjective
+Token: vivaṭṭacchado
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
 Line: 
 
 Line: Buddho noun
@@ -2870,7 +5398,7 @@ Token: samāno
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: idaṃ demonstrative_pronoun
+Line: idaṃ demonstrative pronoun
 Token: idaṃ
 Tag(from file): demonstrative_pronoun
 Tag(from tagger): verb
@@ -2885,7 +5413,7 @@ Token: Etamatthaṃ
 Tag(from file): @sandhi@
 Tag(from tagger): verb
 
-Line: etaṃ demonstrative_pronoun
+Line: etaṃ demonstrative pronoun
 Token: etaṃ
 Tag(from file): demonstrative_pronoun
 Tag(from tagger): verb
@@ -2912,19 +5440,17 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: Tatthetaṃ @sandhi@
 Token: Tatthetaṃ
 Tag(from file): @sandhi@
 Tag(from tagger): verb
 
-Line: tattha adverb
+Line: tattha preposition
 Token: tattha
-Tag(from file): adverb
+Tag(from file): preposition
 Tag(from tagger): verb
 
-Line: etaṃ demonstrative_pronoun
+Line: etaṃ demonstrative pronoun
 Token: etaṃ
 Tag(from file): demonstrative_pronoun
 Tag(from tagger): verb
@@ -2941,16 +5467,14 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: Mudutalunahatthapādo adjective
 Token: Mudutalunahatthapādo
 Tag(from file): adjective
 Tag(from tagger): verb
 
-Line: ca coordinative_conjunction
+Line: ca coordinative conjunciton
 Token: ca
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: hoti verb
@@ -2963,9 +5487,9 @@ Token: jālahatthapādo
 Tag(from file): adjective
 Tag(from tagger): verb
 
-Line: ca coordinative_conjunction
+Line: ca coordinative conjunciton
 Token: ca
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: . @point@
@@ -2975,33 +5499,17 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: etaṃ demonstrative_pronoun
-Token: etaṃ
-Tag(from file): demonstrative_pronoun
-Tag(from tagger): verb
-
-Line: atthaṃ noun
-Token: atthaṃ
-Tag(from file): noun
-Tag(from tagger): verb
-
-Line: 
-
-Line: 
-
 Line: Rājā noun
 Token: Rājā
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: samāno present_active_participle
+Line: samāno present active participle
 Token: samāno
 Tag(from file): present_active_participle
 Tag(from tagger): verb
 
-Line: idaṃ demonstrative_pronoun
+Line: idaṃ demonstrative pronoun
 Token: idaṃ
 Tag(from file): demonstrative_pronoun
 Tag(from tagger): verb
@@ -3016,12 +5524,12 @@ Token: buddho
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: samāno present_active_participle
+Line: samāno present active participle
 Token: samāno
 Tag(from file): present_active_participle
 Tag(from tagger): verb
 
-Line: kiṃ interrogative_pronoun
+Line: kiṃ interrogative pronoun
 Token: kiṃ
 Tag(from file): interrogative_pronoun
 Tag(from tagger): interrogative_pronoun
@@ -3038,9 +5546,7 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: Yāni relative_pronoun
+Line: Yāni relative pronoun
 Token: Yāni
 Tag(from file): relative_pronoun
 Tag(from tagger): relative_pronoun
@@ -3097,19 +5603,17 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: Buddho noun
 Token: Buddho
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: samāno present_active_participle
+Line: samāno present active participle
 Token: samāno
 Tag(from file): present_active_participle
 Tag(from tagger): verb
 
-Line: idaṃ demonstrative_pronoun
+Line: idaṃ demonstrative pronoun
 Token: idaṃ
 Tag(from file): demonstrative_pronoun
 Tag(from tagger): verb
@@ -3138,8 +5642,6 @@ Line: . @point@
 Token: .
 Tag(from file): @point@
 Tagger ignores this token.
-
-Line: 
 
 Line: 
 
@@ -3168,9 +5670,9 @@ Token: hoti
 Tag(from file): verb
 Tag(from tagger): verb
 
-Line: koci interrogative_pronoun
+Line: koci indefinite personal pronoun
 Token: koci
-Tag(from file): interrogative_pronoun
+Tag(from file): indefinite_personal_pronoun
 Tag(from tagger): unknown
 
 Line: paññāya noun
@@ -3183,9 +5685,9 @@ Token: sadiso
 Tag(from file): adjective
 Tag(from tagger): verb
 
-Line: vā coordinative_conjunction
+Line: vā coordinative conjunciton
 Token: vā
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): verb
 
 Line: seṭṭho adjective
@@ -3193,9 +5695,9 @@ Token: seṭṭho
 Tag(from file): adjective
 Tag(from tagger): verb
 
-Line: vā coordinative_conjunction
+Line: vā coordinative conjunciton
 Token: vā
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): verb
 
 Line: kāmabhogīnaṃ adjective
@@ -3210,19 +5712,17 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: Rājā noun
 Token: Rājā
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: samāno present_active_participle
+Line: samāno present active participle
 Token: samāno
 Tag(from file): present_active_participle
 Tag(from tagger): verb
 
-Line: idaṃ demonstrative_pronoun
+Line: idaṃ demonstrative pronoun
 Token: idaṃ
 Tag(from file): demonstrative_pronoun
 Tag(from tagger): verb
@@ -3237,12 +5737,12 @@ Token: buddho
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: samāno present_active_participle
+Line: samāno present active participle
 Token: samāno
 Tag(from file): present_active_participle
 Tag(from tagger): verb
 
-Line: kiṃ interrogative_pronoun
+Line: kiṃ interrogative pronoun
 Token: kiṃ
 Tag(from file): interrogative_pronoun
 Tag(from tagger): interrogative_pronoun
@@ -3259,19 +5759,105 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: etaṃ demonstrative_pronoun
-Token: etaṃ
-Tag(from file): demonstrative_pronoun
+Line: Mahāpañño adjective
+Token: Mahāpañño
+Tag(from file): adjective
 Tag(from tagger): verb
 
-Line: atthaṃ noun
-Token: atthaṃ
+Line: hoti verb
+Token: hoti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: puthupañño adjective
+Token: puthupañño
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: hāsapañño adjective
+Token: hāsapañño
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: javanapañño adjective
+Token: javanapañño
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: tikkhapañño adjective
+Token: tikkhapañño
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: nibbedhikapañño adjective
+Token: nibbedhikapañño
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: nāssa @sandhi@
+Token: nāssa
+Tag(from file): @sandhi@
+Tag(from tagger): verb
+
+Line: Na negation particle
+Token: Na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: assa demonstrative pronoun
+Token: assa
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): demonstrative_pronoun
+
+Line: hoti verb
+Token: hoti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: koci indefinite personal pronoun
+Token: koci
+Tag(from file): indefinite_personal_pronoun
+Tag(from tagger): unknown
+
+Line: paññāya noun
+Token: paññāya
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: sadiso adjective
+Token: sadiso
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: vā coordinative conjunciton
+Token: vā
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: seṭṭho adjective
+Token: seṭṭho
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: vā coordinative conjunciton
+Token: vā
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: sabbasattānaṃ noun
+Token: sabbasattānaṃ
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: 
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
 
 Line: 
 
@@ -3280,12 +5866,12 @@ Token: Rājā
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: samāno present_active_participle
+Line: samāno present active participle
 Token: samāno
 Tag(from file): present_active_participle
 Tag(from tagger): verb
 
-Line: idaṃ demonstrative_pronoun
+Line: idaṃ demonstrative pronoun
 Token: idaṃ
 Tag(from file): demonstrative_pronoun
 Tag(from tagger): verb
@@ -3300,12 +5886,12 @@ Token: buddho
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: samāno present_active_participle
+Line: samāno present active participle
 Token: samāno
 Tag(from file): present_active_participle
 Tag(from tagger): verb
 
-Line: kiṃ interrogative_pronoun
+Line: kiṃ interrogative pronoun
 Token: kiṃ
 Tag(from file): interrogative_pronoun
 Tag(from tagger): interrogative_pronoun
@@ -3319,8 +5905,6 @@ Line: . @point@
 Token: .
 Tag(from file): @point@
 Tagger ignores this token.
-
-Line: 
 
 Line: 
 
@@ -3329,12 +5913,12 @@ Token: Buddho
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: samāno present_active_participle
+Line: samāno present active participle
 Token: samāno
 Tag(from file): present_active_participle
 Tag(from tagger): verb
 
-Line: idaṃ demonstrative_pronoun
+Line: idaṃ demonstrative pronoun
 Token: idaṃ
 Tag(from file): demonstrative_pronoun
 Tag(from tagger): verb
@@ -3366,6 +5950,655 @@ Tagger ignores this token.
 
 Line: 
 
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: So pronoun
+Token: So
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: tehi pronoun
+Token: tehi
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: lakkhaṇehi noun
+Token: lakkhaṇehi
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: samannāgato past passive participle
+Token: samannāgato
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: sace conjunction
+Token: sace
+Tag(from file): conjunction
+Tag(from tagger): verb
+
+Line: agāraṃ noun
+Token: agāraṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ajjhāvasati verb
+Token: ajjhāvasati
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: rājā noun
+Token: rājā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: hoti verb
+Token: hoti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: cakkavattī noun
+Token: cakkavattī
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: dhammiko adjective
+Token: dhammiko
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: dhammarājā noun
+Token: dhammarājā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: cāturanto adjective
+Token: cāturanto
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: vijitāvī adjective
+Token: vijitāvī
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: janapadatthāvariyappatto past passive participle
+Token: janapadatthāvariyappatto
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: sattaratanasamannāgato past passive participle
+Token: sattaratanasamannāgato
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Sace conjunction
+Token: Sace
+Tag(from file): conjunction
+Tag(from tagger): verb
+
+Line: tesaṃ pronoun
+Token: tesaṃ
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: bhavataṃ noun
+Token: bhavataṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: samaṇabrāhmaṇānaṃ noun
+Token: samaṇabrāhmaṇānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: saccaṃ adjective
+Token: saccaṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: vacanaṃ noun
+Token: vacanaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhavanto noun
+Token: bhavanto
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: kāyassa noun
+Token: kāyassa
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: bhedā noun
+Token: bhedā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: paraṃ adverb
+Token: paraṃ
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: maraṇā noun
+Token: maraṇā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: sugatiṃ noun
+Token: sugatiṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: saggaṃ noun
+Token: saggaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: lokaṃ noun
+Token: lokaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: upapajjissanti verb
+Token: upapajjissanti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: devānaṃ noun
+Token: devānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: tāvatiṃsānaṃ cardinal adjecitve
+Token: tāvatiṃsānaṃ
+Tag(from file): cardinal_adjecitve
+Tag(from tagger): verb
+
+Line: sahabyataṃ noun
+Token: sahabyataṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Bhavanto noun
+Token: Bhavanto
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: me personal pronoun
+Token: me
+Tag(from file): personal_pronoun
+Tag(from tagger): personal_pronoun
+
+Line: saddhāyikā adjective
+Token: saddhāyikā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: paccayikā adjective
+Token: paccayikā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: yaṃ relative pronoun
+Token: yaṃ
+Tag(from file): relative_pronoun
+Tag(from tagger): relative_pronoun
+
+Line: bhavantehi noun
+Token: bhavantehi
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: diṭṭhaṃ past passive participle
+Token: diṭṭhaṃ
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: yathā adverb
+Token: yathā
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: sāmaṃ adverb
+Token: sāmaṃ
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: diṭṭhaṃ past passive participle
+Token: diṭṭhaṃ
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: evametaṃ @sandhi@
+Token: evametaṃ
+Tag(from file): @sandhi@
+Tag(from tagger): verb
+
+Line: evaṃ demonstrative adverb
+Token: evaṃ
+Tag(from file): demonstrative_adverb
+Tag(from tagger): verb
+
+Line: etaṃ demonstrative pronoun
+Token: etaṃ
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): verb
+
+Line: bhavissatīti @sandhi@
+Token: bhavissatīti
+Tag(from file): @sandhi@
+Tag(from tagger): verb
+
+Line: bhavissati verb
+Token: bhavissati
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: iti quotation particle
+Token: iti
+Tag(from file): quotation_particle
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Te pronoun
+Token: Te
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: me pronoun
+Token: me
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: sādhū @sandhi@
+Token: sādhū
+Tag(from file): @sandhi@
+Tag(from tagger): verb
+
+Line: ti quotation particle
+Token: ti
+Tag(from file): quotation_particle
+Tag(from tagger): verb
+
+Line: paṭissutvā absolutive
+Token: paṭissutvā
+Tag(from file): absolutive
+Tag(from tagger): verb
+
+Line: neva @sandhi@
+Token: neva
+Tag(from file): @sandhi@
+Tag(from tagger): unknown
+
+Line: āgantvā absolutive
+Token: āgantvā
+Tag(from file): absolutive
+Tag(from tagger): verb
+
+Line: ārocenti verb
+Token: ārocenti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: dūtaṃ noun
+Token: dūtaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: pahiṇanti verb
+Token: pahiṇanti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: evaṃ demonstrative adverb
+Token: evaṃ
+Tag(from file): demonstrative_adverb
+Tag(from tagger): verb
+
+Line: dīghāyukā adjective
+Token: dīghāyukā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: Na negation particle
+Token: Na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: atthi verb
+Token: atthi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: Na negation particle
+Token: Na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: atthi verb
+Token: atthi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: 
+
+Line: Na negation particle
+Token: Na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: mayaṃ pronoun
+Token: mayaṃ
+Tag(from file): pronoun
+Tag(from tagger): verb
+
+Line: bhoto noun
+Token: bhoto
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: kassapassa proper noun
+Token: kassapassa
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: saddahāma verb
+Token: saddahāma
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: atthi verb
+Token: atthi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: devā noun
+Token: devā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: tāvatiṃsā cardinal adjecitve
+Token: tāvatiṃsā
+Tag(from file): cardinal_adjecitve
+Tag(from tagger): verb
+
+Line: ti quotation particle
+Token: ti
+Tag(from file): quotation_particle
+Tag(from tagger): verb
+
+Line: vā coordinative conjunciton
+Token: vā
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: evaṃdīghāyukā @sandhi@
+Token: evaṃdīghāyukā
+Tag(from file): @sandhi@
+Tag(from tagger): verb
+
+Line: devā noun
+Token: devā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: tāvatiṃsā cardinal adjecitve
+Token: tāvatiṃsā
+Tag(from file): cardinal_adjecitve
+Tag(from tagger): verb
+
+Line: ti quotation particle
+Token: ti
+Tag(from file): quotation_particle
+Tag(from tagger): verb
+
+Line: vā coordinative conjunciton
+Token: vā
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: ti quotation particle
+Token: ti
+Tag(from file): quotation_particle
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: So pronoun
+Token: So
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: evaṃ demonstrative adverb
+Token: evaṃ
+Tag(from file): demonstrative_adverb
+Tag(from tagger): verb
+
+Line: vadeyya verb
+Token: vadeyya
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: atthi verb
+Token: atthi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: Na negation particle
+Token: Na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: atthi verb
+Token: atthi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: kaṇhasukkāni adjective
+Token: kaṇhasukkāni
+Tag(from file): adjective
+Tag(from tagger): unknown
+
+Line: rūpāni noun
+Token: rūpāni
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: atthi verb
+Token: atthi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: kaṇhasukkānaṃ adjective
+Token: kaṇhasukkānaṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: rūpānaṃ noun
+Token: rūpānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: dassāvī noun
+Token: dassāvī
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Na negation particle
+Token: Na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: atthi verb
+Token: atthi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: Na negation particle
+Token: Na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: atthi verb
+Token: atthi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: Na negation particle
+Token: Na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: atthi verb
+Token: atthi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: Na negation particle
+Token: Na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: atthi verb
+Token: atthi
+Tag(from file): verb
+Tag(from tagger): verb
+
 Line: 
 
 Line: Natthi @sandhi@
@@ -3388,9 +6621,14 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: natthi @sandhi@
-Token: natthi
-Tag(from file): @sandhi@
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: atthi verb
+Token: atthi
+Tag(from file): verb
 Tag(from tagger): verb
 
 Line: lohitakānaṃ adjective
@@ -3415,56 +6653,109 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: ca coordinative_conjunction
-Token: ca
-Tag(from file): coordinative_conjunction
+Line: Na negation particle
+Token: Na
+Tag(from file): negation_particle
 Tag(from tagger): unknown
 
-Line: eva emphatic_particle
-Token: eva
-Tag(from file): emphatic_particle
+Line: atthi verb
+Token: atthi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: mañjiṭṭhakāni adjective
+Token: mañjiṭṭhakāni
+Tag(from file): adjective
 Tag(from tagger): unknown
 
-Line: jīvitaṃ noun
-Token: jīvitaṃ
+Line: rūpāni noun
+Token: rūpāni
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: atthi verb
+Token: atthi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: mañjiṭṭhakānaṃ adjective
+Token: mañjiṭṭhakānaṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: rūpānaṃ noun
+Token: rūpānaṃ
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: ca coordinative_conjunction
-Token: ca
-Tag(from file): coordinative_conjunction
-Tag(from tagger): unknown
-
-Line: gabbhaṃ noun
-Token: gabbhaṃ
+Line: dassāvī noun
+Token: dassāvī
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: ca coordinative_conjunction
-Token: ca
-Tag(from file): coordinative_conjunction
-Tag(from tagger): unknown
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
 
-Line: sāpateyyaṃ noun
-Token: sāpateyyaṃ
+Line: 
+
+Line: Natthi @sandhi@
+Token: Natthi
+Tag(from file): @sandhi@
+Tag(from tagger): verb
+
+Line: samavisamaṃ noun
+Token: samavisamaṃ
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: ca coordinative_conjunction
-Token: ca
-Tag(from file): coordinative_conjunction
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
 Tag(from tagger): unknown
 
-Line: 
+Line: atthi verb
+Token: atthi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: samavisamassa noun
+Token: samavisamassa
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: dassāvī noun
+Token: dassāvī
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
 
 Line: 
 
-Line: Sā personal_pronoun
+Line: Sā personal pronoun
 Token: Sā
 Tag(from file): personal_pronoun
-Tag(from tagger): verb
+Tag(from tagger): personal_pronoun
 
 Line: attānaṃ noun
 Token: attānaṃ
@@ -3503,17 +6794,114 @@ Tagger ignores this token.
 
 Line: 
 
+Line: Na negation particle
+Token: Na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: rājañña noun
+Token: rājañña
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: samaṇabrāhmaṇā noun
+Token: samaṇabrāhmaṇā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: sīlavanto adjective
+Token: sīlavanto
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: kalyāṇadhammā adjective
+Token: kalyāṇadhammā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: apakkaṃ noun
+Token: apakkaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: paripācenti verb
+Token: paripācenti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: ; @semicolon@
+Token: ;
+Tag(from file): @semicolon@
+Tagger ignores this token.
+
+Line: api coordinative conjunciton
+Token: api
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: ca coordinative conjunciton
+Token: ca
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: paripākaṃ noun
+Token: paripākaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: āgamenti verb
+Token: āgamenti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Na negation particle
+Token: Na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: eva emphatic particle
+Token: eva
+Tag(from file): emphatic_particle
+Tag(from tagger): unknown
+
+Line: assa demonstrative pronoun
+Token: assa
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): demonstrative_pronoun
+
 Line: 
 
 Line: Te pronoun
 Token: Te
 Tag(from file): pronoun
-Tag(from tagger): verb
+Tag(from tagger): personal_pronoun
 
 Line: taṃ pronoun
 Token: taṃ
 Tag(from file): pronoun
-Tag(from tagger): verb
+Tag(from tagger): personal_pronoun
 
 Line: purisaṃ noun
 Token: purisaṃ
@@ -3537,17 +6925,15 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: Te personal_pronoun
+Line: Te personal pronoun
 Token: Te
 Tag(from file): personal_pronoun
-Tag(from tagger): verb
+Tag(from tagger): personal_pronoun
 
-Line: taṃ personal_pronoun
+Line: taṃ personal pronoun
 Token: taṃ
 Tag(from file): personal_pronoun
-Tag(from tagger): verb
+Tag(from tagger): personal_pronoun
 
 Line: purisaṃ noun
 Token: purisaṃ
@@ -3573,8 +6959,6 @@ Line: . @point@
 Token: .
 Tag(from file): @point@
 Tagger ignores this token.
-
-Line: 
 
 Line: 
 
@@ -3615,8 +6999,6 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: Nevāhaṃ @sandhi@
 Token: Nevāhaṃ
 Tag(from file): @sandhi@
@@ -3639,6 +7021,61 @@ Tagger ignores this token.
 
 Line: 
 
+Line: Na negation particle
+Token: Na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: tveva @sandhi@
+Token: tveva
+Tag(from file): @sandhi@
+Tag(from tagger): unknown
+
+Line: yathā adverb
+Token: yathā
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: tvaṃ pronoun
+Token: tvaṃ
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: bālo adjective
+Token: bālo
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: abyatto adjective
+Token: abyatto
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: ayoniso adjective
+Token: ayoniso
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: aggiṃ noun
+Token: aggiṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: gavesī @sandhi@
+Token: gavesī
+Tag(from file): @sandhi@
+Tag(from tagger): verb
+
+Line: ti quotation particle
+Token: ti
+Tag(from file): quotation_particle
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
 Line: 
 
 Line: Evameva @sandhi@
@@ -3646,15 +7083,15 @@ Token: Evameva
 Tag(from file): @sandhi@
 Tag(from tagger): unknown
 
-Line: kho emphatic_particle
+Line: kho emphatic particle
 Token: kho
 Tag(from file): emphatic_particle
 Tag(from tagger): verb
 
-Line: tvaṃ personal_pronoun
+Line: tvaṃ pronoun
 Token: tvaṃ
-Tag(from file): personal_pronoun
-Tag(from tagger): verb
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
 
 Line: , @comma@
 Token: ,
@@ -3703,6 +7140,168 @@ Tagger ignores this token.
 
 Line: 
 
+Line: Ayaṃ demonstrative pronoun
+Token: Ayaṃ
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): demonstrative_pronoun
+
+Line: bho noun
+Token: bho
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: puriso noun
+Token: puriso
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: neva @sandhi@
+Token: neva
+Tag(from file): @sandhi@
+Tag(from tagger): unknown
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: eva emphatic particle
+Token: eva
+Tag(from file): emphatic_particle
+Tag(from tagger): unknown
+
+Line: amhākaṃ personal pronoun
+Token: amhākaṃ
+Tag(from file): personal_pronoun
+Tag(from tagger): personal_pronoun
+
+Line: mitto noun
+Token: mitto
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: ñātisālohito noun
+Token: ñātisālohito
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: kathaṃ interrogative adverb
+Token: kathaṃ
+Tag(from file): interrogative_adverb
+Tag(from tagger): verb
+
+Line: mayaṃ personal pronoun
+Token: mayaṃ
+Tag(from file): personal_pronoun
+Tag(from tagger): verb
+
+Line: imassa demonstrative pronoun
+Token: imassa
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): demonstrative_pronoun
+
+Line: saddhāya noun
+Token: saddhāya
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: gamissāma verb
+Token: gamissāma
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Te personal pronoun
+Token: Te
+Tag(from file): personal_pronoun
+Tag(from tagger): personal_pronoun
+
+Line: paṭhamepi @sandhi@
+Token: paṭhamepi
+Tag(from file): @sandhi@
+Tag(from tagger): unknown
+
+Line: paṭhame ordinal adjective
+Token: paṭhame
+Tag(from file): ordinal_adjective
+Tag(from tagger): verb
+
+Line: pi coordinative conjunciton
+Token: pi
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: satthavāse noun
+Token: satthavāse
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: addasaṃsu verb
+Token: addasaṃsu
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: tiṇaṃ noun
+Token: tiṇaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: vā coordinative conjunciton
+Token: vā
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: kaṭṭhaṃ noun
+Token: kaṭṭhaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: vā coordinative conjunciton
+Token: vā
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: udakaṃ noun
+Token: udakaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: vā coordinative conjunciton
+Token: vā
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
 Line: 
 
 Line: Tattha adverb
@@ -3725,7 +7324,7 @@ Token: sukkhagūthaṃ
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: chaḍḍitaṃ past_passive_participle
+Line: chaḍḍitaṃ past passive participle
 Token: chaḍḍitaṃ
 Tag(from file): past_passive_participle
 Tag(from tagger): verb
@@ -3737,22 +7336,77 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
+Line: So pronoun
+Token: So
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
 
-Line: Atha coordinative_conjunction
-Token: Atha
-Tag(from file): coordinative_conjunction
+Line: uggharantaṃ present active participle
+Token: uggharantaṃ
+Tag(from file): present_active_participle
 Tag(from tagger): verb
 
-Line: kho emphatic_particle
+Line: paggharantaṃ present active participle
+Token: paggharantaṃ
+Tag(from file): present_active_participle
+Tag(from tagger): verb
+
+Line: yāva adverb
+Token: yāva
+Tag(from file): adverb
+Tag(from tagger): unknown
+
+Line: agganakhā noun
+Token: agganakhā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: gūthena noun
+Token: gūthena
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: makkhito past passive participle
+Token: makkhito
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: gūthabhāraṃ noun
+Token: gūthabhāraṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ādāya absolutive
+Token: ādāya
+Tag(from file): absolutive
+Tag(from tagger): unknown
+
+Line: agamāsi verb
+Token: agamāsi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Atha coordinative conjunciton
+Token: Atha
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: kho emphatic particle
 Token: kho
 Tag(from file): emphatic_particle
 Tag(from tagger): verb
 
-Line: so personal_pronoun
+Line: so pronoun
 Token: so
-Tag(from file): personal_pronoun
-Tag(from tagger): verb
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
 
 Line: sahāyako noun
 Token: sahāyako
@@ -3786,14 +7440,59 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
-Line: Atha coordinative_conjunction
+Line: Atha coordinative conjunciton
 Token: Atha
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): verb
 
-Line: kho emphatic_particle
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: so pronoun
+Token: so
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: sahāyako noun
+Token: sahāyako
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: sajjhabhāraṃ noun
+Token: sajjhabhāraṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: chaḍḍetvā absolutive
+Token: chaḍḍetvā
+Tag(from file): absolutive
+Tag(from tagger): verb
+
+Line: suvaṇṇabhāraṃ noun
+Token: suvaṇṇabhāraṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ādiyi verb
+Token: ādiyi
+Tag(from file): verb
+Tag(from tagger): unknown
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Atha coordinative conjunciton
+Token: Atha
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: kho emphatic particle
 Token: kho
 Tag(from file): emphatic_particle
 Tag(from tagger): verb
@@ -3803,12 +7502,12 @@ Token: āyasmā
 Tag(from file): adjective
 Tag(from tagger): verb
 
-Line: ānando proper_noun
+Line: ānando proper noun
 Token: ānando
 Tag(from file): proper_noun
 Tag(from tagger): verb
 
-Line: yena relative_pronoun
+Line: yena relative pronoun
 Token: yena
 Tag(from file): relative_pronoun
 Tag(from tagger): relative_pronoun
@@ -3818,14 +7517,9 @@ Token: bhagavā
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: tenupasaṅkami @sandhi@
-Token: tenupasaṅkami
-Tag(from file): @sandhi@
-Tag(from tagger): verb
-
-Line: tena pronoun
+Line: tena @sandhi@
 Token: tena
-Tag(from file): pronoun
+Tag(from file): @sandhi@
 Tag(from tagger): personal_pronoun
 
 Line: upasaṅkami verb
@@ -3853,14 +7547,9 @@ Token: abhivādetvā
 Tag(from file): absolutive
 Tag(from tagger): verb
 
-Line: ekamantaṃ @sandhi@
-Token: ekamantaṃ
-Tag(from file): @sandhi@
-Tag(from tagger): verb
-
-Line: ekaṃ cardinal_adjective
+Line: ekaṃ @sandhi@
 Token: ekaṃ
-Tag(from file): cardinal_adjective
+Tag(from file): @sandhi@
 Tag(from tagger): verb
 
 Line: antaṃ noun
@@ -3880,6 +7569,111 @@ Tagger ignores this token.
 
 Line: 
 
+Line: ekaṃ cardinal adjecitve
+Token: ekaṃ
+Tag(from file): cardinal_adjecitve
+Tag(from tagger): verb
+
+Line: anantaṃ adjective
+Token: anantaṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: nisinno past passive participle
+Token: nisinno
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: āyasmā adjective
+Token: āyasmā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: ānando proper noun
+Token: ānando
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: bhagavantaṃ noun
+Token: bhagavantaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: etad @sandhi@
+Token: etad
+Tag(from file): @sandhi@
+Tag(from tagger): demonstrative_pronoun
+
+Line: avoca verb
+Token: avoca
+Tag(from file): verb
+Tag(from tagger): unknown
+
+Line: etad pronoun
+Token: etad
+Tag(from file): pronoun
+Tag(from tagger): demonstrative_pronoun
+
+Line: avoca verb
+Token: avoca
+Tag(from file): verb
+Tag(from tagger): unknown
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: acchariyaṃ noun
+Token: acchariyaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhante noun
+Token: bhante
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: abbhutaṃ noun
+Token: abbhutaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhante noun
+Token: bhante
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
 Line: 
 
 Line: Gambhīro adjective
@@ -3892,22 +7686,22 @@ Token: cāyaṃ
 Tag(from file): @sandhi@
 Tag(from tagger): verb
 
-Line: ca coordinative_conjunction
+Line: ca coordinative conjunciton
 Token: ca
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
-Line: ayaṃ demonstrative_pronoun
+Line: ayaṃ demonstrative pronoun
 Token: ayaṃ
 Tag(from file): demonstrative_pronoun
-Tag(from tagger): verb
+Tag(from tagger): demonstrative_pronoun
 
 Line: , @comma@
 Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: ānanda proper_noun
+Line: ānanda proper noun
 Token: ānanda
 Tag(from file): proper_noun
 Tag(from tagger): unknown
@@ -3927,9 +7721,9 @@ Token: gambhīrāvabhāso
 Tag(from file): noun
 Tag(from tagger): verb
 
-Line: ca coordinative_conjunction
+Line: ca coordinative conjunciton
 Token: ca
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): unknown
 
 Line: . @point@
@@ -3939,16 +7733,64 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
 
-Line: Iti quotation_participle
-Token: Iti
-Tag(from file): quotation_participle
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: Taṇhaṃ noun
+Token: Taṇhaṃ
+Tag(from file): noun
 Tag(from tagger): verb
 
-Line: kho emphatic_particle
+Line: paṭicca absolutive
+Token: paṭicca
+Tag(from file): absolutive
+Tag(from tagger): unknown
+
+Line: pariyesanā noun
+Token: pariyesanā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ti quotation particle
+Token: ti
+Tag(from file): quotation_particle
+Tag(from tagger): verb
+
+Line: iti quotation particle
+Token: iti
+Tag(from file): quotation_particle
+Tag(from tagger): verb
+
+Line: kho emphatic particle
 Token: kho
 Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: etaṃ @sandhi@
+Token: etaṃ
+Tag(from file): @sandhi@
+Tag(from tagger): verb
+
+Line: vuttaṃ past passive participle
+Token: vuttaṃ
+Tag(from file): past_passive_participle
 Tag(from tagger): verb
 
 Line: , @comma@
@@ -3956,7 +7798,17 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: ānanda proper_noun
+Line: tadānanda @sandhi@
+Token: tadānanda
+Tag(from file): @sandhi@
+Tag(from tagger): unknown
+
+Line: tad pronoun
+Token: tad
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: ānanda proper noun
 Token: ānanda
 Tag(from file): proper_noun
 Tag(from tagger): unknown
@@ -3966,14 +7818,91 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: ime demonstrative_pronoun
-Token: ime
+Line: iminā demonstrative pronoun
+Token: iminā
 Tag(from file): demonstrative_pronoun
+Tag(from tagger): demonstrative_pronoun
+
+Line: apetaṃ past passive participle
+Token: apetaṃ
+Tag(from file): past_passive_participle
 Tag(from tagger): verb
 
-Line: dve cardinal_adjective
+Line: pariyāyena noun
+Token: pariyāyena
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: veditabbaṃ future passive participle
+Token: veditabbaṃ
+Tag(from file): future_passive_participle
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: yathā adverb
+Token: yathā
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: taṇhaṃ noun
+Token: taṇhaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: paṭicca absolutive
+Token: paṭicca
+Tag(from file): absolutive
+Tag(from tagger): unknown
+
+Line: pariyesanā noun
+Token: pariyesanā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Iti quotation particle
+Token: Iti
+Tag(from file): quotation_particle
+Tag(from tagger): verb
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: ānanda proper noun
+Token: ānanda
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: ime demonstrative pronoun
+Token: ime
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): demonstrative_pronoun
+
+Line: dve cardinal adjecitve
 Token: dve
-Tag(from file): cardinal_adjective
+Tag(from file): cardinal_adjecitve
 Tag(from tagger): verb
 
 Line: dhammā noun
@@ -4008,14 +7937,12 @@ Tagger ignores this token.
 
 Line: 
 
-Line: 
-
 Line: Ettāvatā adverb
 Token: Ettāvatā
 Tag(from file): adverb
 Tag(from tagger): verb
 
-Line: kho emphatic_particle
+Line: kho emphatic particle
 Token: kho
 Tag(from file): emphatic_particle
 Tag(from tagger): verb
@@ -4025,7 +7952,7 @@ Token: ,
 Tag(from file): @comma@
 Tagger ignores this token.
 
-Line: ānanda proper_noun
+Line: ānanda proper noun
 Token: ānanda
 Tag(from file): proper_noun
 Tag(from tagger): unknown
@@ -4040,9 +7967,9 @@ Token: jāyetha
 Tag(from file): verb
 Tag(from tagger): verb
 
-Line: vā coordinative_conjunction
+Line: vā coordinative conjunciton
 Token: vā
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): verb
 
 Line: jīyetha verb
@@ -4050,9 +7977,9 @@ Token: jīyetha
 Tag(from file): verb
 Tag(from tagger): verb
 
-Line: vā coordinative_conjunction
+Line: vā coordinative conjunciton
 Token: vā
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): verb
 
 Line: mīyetha verb
@@ -4060,9 +7987,9 @@ Token: mīyetha
 Tag(from file): verb
 Tag(from tagger): verb
 
-Line: vā coordinative_conjunction
+Line: vā coordinative conjunciton
 Token: vā
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): verb
 
 Line: cavetha verb
@@ -4070,9 +7997,9 @@ Token: cavetha
 Tag(from file): verb
 Tag(from tagger): verb
 
-Line: vā coordinative_conjunction
+Line: vā coordinative conjunciton
 Token: vā
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
 Tag(from tagger): verb
 
 Line: upapajjetha verb
@@ -4080,9 +8007,2273 @@ Token: upapajjetha
 Tag(from file): verb
 Tag(from tagger): verb
 
-Line: vā coordinative_conjunction
+Line: vā coordinative conjunciton
 Token: vā
-Tag(from file): coordinative_conjunction
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: Kittāvatā adverb
+Token: Kittāvatā
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: ca coordinative conjunciton
+Token: ca
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: ānanda proper noun
+Token: ānanda
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: attānaṃ noun
+Token: attānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: paññapento present active participle
+Token: paññapento
+Tag(from file): present_active_participle
+Tag(from tagger): verb
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: paññapeti verb
+Token: paññapeti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Rūpiṃ adjective
+Token: Rūpiṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: vā coordinative conjunciton
+Token: vā
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: hi emphatic particle
+Token: hi
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: ānanda proper noun
+Token: ānanda
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: parittaṃ past passive participle
+Token: parittaṃ
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: attānaṃ noun
+Token: attānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: paññapento present active participle
+Token: paññapento
+Tag(from file): present_active_participle
+Tag(from tagger): verb
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: paññapeti verb
+Token: paññapeti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: rūpī adjective
+Token: rūpī
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: me personal pronoun
+Token: me
+Tag(from file): personal_pronoun
+Tag(from tagger): personal_pronoun
+
+Line: paritto adjective
+Token: paritto
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: attā noun
+Token: attā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ti quotation particle
+Token: ti
+Tag(from file): quotation_particle
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Rūpiṃ adjective
+Token: Rūpiṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: vā coordinative conjunciton
+Token: vā
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: hi emphatic particle
+Token: hi
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: ānanda proper noun
+Token: ānanda
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: anantaṃ adjective
+Token: anantaṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: attānaṃ noun
+Token: attānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: paññapento present active participle
+Token: paññapento
+Tag(from file): present_active_participle
+Tag(from tagger): verb
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: paññapeti verb
+Token: paññapeti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: rūpī adjective
+Token: rūpī
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: me personal pronoun
+Token: me
+Tag(from file): personal_pronoun
+Tag(from tagger): personal_pronoun
+
+Line: ananto adjective
+Token: ananto
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: attā noun
+Token: attā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ti quotation particle
+Token: ti
+Tag(from file): quotation_particle
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Arūpiṃ adjective
+Token: Arūpiṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: vā coordinative conjunciton
+Token: vā
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: hi emphatic particle
+Token: hi
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: ānanda proper noun
+Token: ānanda
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: anantaṃ adjective
+Token: anantaṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: attānaṃ noun
+Token: attānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: paññapento present active participle
+Token: paññapento
+Tag(from file): present_active_participle
+Tag(from tagger): verb
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: paññapeti verb
+Token: paññapeti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: arūpī adjective
+Token: arūpī
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: me personal pronoun
+Token: me
+Tag(from file): personal_pronoun
+Tag(from tagger): personal_pronoun
+
+Line: ananto adjective
+Token: ananto
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: attā noun
+Token: attā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ti quotation particle
+Token: ti
+Tag(from file): quotation_particle
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: Tatra preposition
+Token: Tatra
+Tag(from file): preposition
+Tag(from tagger): unknown
+
+Line: ānanda proper noun
+Token: ānanda
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: yo relative pronoun
+Token: yo
+Tag(from file): relative_pronoun
+Tag(from tagger): relative_pronoun
+
+Line: so pronoun
+Token: so
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: rūpiṃ adjective
+Token: rūpiṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: parittaṃ past passive participle
+Token: parittaṃ
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: attānaṃ noun
+Token: attānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: paññapento present active participle
+Token: paññapento
+Tag(from file): present_active_participle
+Tag(from tagger): verb
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: paññapeti verb
+Token: paññapeti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Katamā interrogative pronoun
+Token: Katamā
+Tag(from file): interrogative_pronoun
+Tag(from tagger): verb
+
+Line: satta numeral
+Token: satta
+Tag(from file): numeral
+Tag(from tagger): unknown
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Ayaṃ demonstrative pronoun
+Token: Ayaṃ
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): demonstrative_pronoun
+
+Line: paṭhamā ordinal adjective
+Token: paṭhamā
+Tag(from file): ordinal_adjective
+Tag(from tagger): verb
+
+Line: viññāṇaṭṭhiti noun
+Token: viññāṇaṭṭhiti
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Ayaṃ demonstrative pronoun
+Token: Ayaṃ
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): demonstrative_pronoun
+
+Line: tatiyā ordinal adjective
+Token: tatiyā
+Tag(from file): ordinal_adjective
+Tag(from tagger): verb
+
+Line: viññāṇaṭṭhiti noun
+Token: viññāṇaṭṭhiti
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Ayaṃ demonstrative pronoun
+Token: Ayaṃ
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): demonstrative_pronoun
+
+Line: chaṭṭhī ordinal adjective
+Token: chaṭṭhī
+Tag(from file): ordinal_adjective
+Tag(from tagger): verb
+
+Line: viññāṇaṭṭhiti noun
+Token: viññāṇaṭṭhiti
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Ayaṃ demonstrative pronoun
+Token: Ayaṃ
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): demonstrative_pronoun
+
+Line: sattamī ordinal adjective
+Token: sattamī
+Tag(from file): ordinal_adjective
+Tag(from tagger): verb
+
+Line: viññāṇaṭṭhiti noun
+Token: viññāṇaṭṭhiti
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Tena pronoun
+Token: Tena
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: ca coordinative conjunciton
+Token: ca
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: nātikiyā proper noun
+Token: nātikiyā
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: paricārakā noun
+Token: paricārakā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: attamanā adjective
+Token: attamanā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: ahesuṃ verb
+Token: ahesuṃ
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: pamuditā past passive participle
+Token: pamuditā
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: pītisomanassajātā past passive participle
+Token: pītisomanassajātā
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: bhagavato noun
+Token: bhagavato
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: pañhaveyyākaraṇaṃ noun
+Token: pañhaveyyākaraṇaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: sutvā absolutive
+Token: sutvā
+Tag(from file): absolutive
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Paropaññāsa numeral
+Token: Paropaññāsa
+Tag(from file): numeral
+Tag(from tagger): unknown
+
+Line: nātikiyā proper noun
+Token: nātikiyā
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: paricārakā noun
+Token: paricārakā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: abbhatītā past passive participle
+Token: abbhatītā
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: kālaṅkatā past passive participle
+Token: kālaṅkatā
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: pañcannaṃ ordinal adjective
+Token: pañcannaṃ
+Tag(from file): ordinal_adjective
+Tag(from tagger): verb
+
+Line: orambhāgiyānaṃ adjective
+Token: orambhāgiyānaṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: saṃyojanānaṃ noun
+Token: saṃyojanānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: parikkhayā noun
+Token: parikkhayā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: opapātikā adjective
+Token: opapātikā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: tattha preposition
+Token: tattha
+Tag(from file): preposition
+Tag(from tagger): verb
+
+Line: parinibbāyino adjective
+Token: parinibbāyino
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: anāvattidhammā adjective
+Token: anāvattidhammā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: tasmā pronoun
+Token: tasmā
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: lokā noun
+Token: lokā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Sādhikā adjective
+Token: Sādhikā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: navuti numeral
+Token: navuti
+Tag(from file): numeral
+Tag(from tagger): verb
+
+Line: nātikiyā proper noun
+Token: nātikiyā
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: paricārakā noun
+Token: paricārakā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: abbhatītā past passive participle
+Token: abbhatītā
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: kālaṅkatā past passive participle
+Token: kālaṅkatā
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: tiṇṇaṃ ordinal adjective
+Token: tiṇṇaṃ
+Tag(from file): ordinal_adjective
+Tag(from tagger): verb
+
+Line: saṃyojanānaṃ noun
+Token: saṃyojanānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: parikkhayā noun
+Token: parikkhayā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: rāgadosamohānaṃ noun
+Token: rāgadosamohānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: tanuttā noun
+Token: tanuttā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: sakadāgāmino adjective
+Token: sakadāgāmino
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: sakid adverb
+Token: sakid
+Tag(from file): adverb
+Tag(from tagger): unknown
+
+Line: eva emphatic particle
+Token: eva
+Tag(from file): emphatic_particle
+Tag(from tagger): unknown
+
+Line: imaṃ demonstrative pronoun
+Token: imaṃ
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): demonstrative_pronoun
+
+Line: lokaṃ noun
+Token: lokaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: āgantvā absolutive
+Token: āgantvā
+Tag(from file): absolutive
+Tag(from tagger): verb
+
+Line: dukkhassa noun
+Token: dukkhassa
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: antaṃ noun
+Token: antaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: karissanti verb
+Token: karissanti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: So pronoun
+Token: So
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: api coordinative conjunciton
+Token: api
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: ahosi verb
+Token: ahosi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: buddhe noun
+Token: buddhe
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: pasanno past passive participle
+Token: pasanno
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: dhamme noun
+Token: dhamme
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: pasanno past passive participle
+Token: pasanno
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: saṅghe noun
+Token: saṅghe
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: pasanno past passive participle
+Token: pasanno
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: sīlesu noun
+Token: sīlesu
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: paripūrakārī adjective
+Token: paripūrakārī
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Bhagavato noun
+Token: Bhagavato
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: sambodhi noun
+Token: sambodhi
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: magadhesu proper noun
+Token: magadhesu
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Yattha preposition
+Token: Yattha
+Tag(from file): preposition
+Tag(from tagger): verb
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: bhagavato noun
+Token: bhagavato
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: sambodhi noun
+Token: sambodhi
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: magadhesu proper noun
+Token: magadhesu
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: kathaṃ interrogative adverb
+Token: kathaṃ
+Tag(from file): interrogative_adverb
+Tag(from tagger): verb
+
+Line: tatra preposition
+Token: tatra
+Tag(from file): preposition
+Tag(from tagger): unknown
+
+Line: bhagavā noun
+Token: bhagavā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: māgadhake proper noun
+Token: māgadhake
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: paricārake noun
+Token: paricārake
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: abbhatīte past passive participle
+Token: abbhatīte
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: kālaṅkate past passive participle
+Token: kālaṅkate
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: upapattīsu noun
+Token: upapattīsu
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: byākareyya verb
+Token: byākareyya
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Bhagavato noun
+Token: Bhagavato
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhante noun
+Token: bhante
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: sambodhi noun
+Token: sambodhi
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: magadhesu proper noun
+Token: magadhesu
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Yattha preposition
+Token: Yattha
+Tag(from file): preposition
+Tag(from tagger): verb
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhante noun
+Token: bhante
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhagavato noun
+Token: bhagavato
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: sambodhi noun
+Token: sambodhi
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: magadhesu proper noun
+Token: magadhesu
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: kathaṃ interrogative adverb
+Token: kathaṃ
+Tag(from file): interrogative_adverb
+Tag(from tagger): verb
+
+Line: tatra preposition
+Token: tatra
+Tag(from file): preposition
+Tag(from tagger): unknown
+
+Line: bhagavā noun
+Token: bhagavā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: māgadhake proper noun
+Token: māgadhake
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: paricārake noun
+Token: paricārake
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: abbhatīte past passive participle
+Token: abbhatīte
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: kālaṅkate past passive participle
+Token: kālaṅkate
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: upapattīsu noun
+Token: upapattīsu
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: byākareyya verb
+Token: byākareyya
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: Atha coordinative conjunciton
+Token: Atha
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhante noun
+Token: bhante
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: uttarāya adjective
+Token: uttarāya
+Tag(from file): adjective
+Tag(from tagger): unknown
+
+Line: disāya noun
+Token: disāya
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: uḷāro adjective
+Token: uḷāro
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: āloko noun
+Token: āloko
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: sañjāyi verb
+Token: sañjāyi
+Tag(from file): verb
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: obhāso noun
+Token: obhāso
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: pāturahosi verb
+Token: pāturahosi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: atikkamma absolutive
+Token: atikkamma
+Tag(from file): absolutive
+Tag(from tagger): verb
+
+Line: eva emphatic particle
+Token: eva
+Tag(from file): emphatic_particle
+Tag(from tagger): unknown
+
+Line: devānaṃ noun
+Token: devānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: devānubhāvaṃ noun
+Token: devānubhāvaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Atha coordinative conjunciton
+Token: Atha
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhante noun
+Token: bhante
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: brahmā proper noun
+Token: brahmā
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: sanaṅkumāro noun
+Token: sanaṅkumāro
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: oḷārikaṃ adjective
+Token: oḷārikaṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: attabhāvaṃ noun
+Token: attabhāvaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: abhinimminitvā absolutive
+Token: abhinimminitvā
+Tag(from file): absolutive
+Tag(from tagger): verb
+
+Line: kumāravaṇṇī noun
+Token: kumāravaṇṇī
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: hutvā absolutive
+Token: hutvā
+Tag(from file): absolutive
+Tag(from tagger): verb
+
+Line: pañcasikho adjective
+Token: pañcasikho
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: devānaṃ noun
+Token: devānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: tāvatiṃsānaṃ cardinal adjecitve
+Token: tāvatiṃsānaṃ
+Tag(from file): cardinal_adjecitve
+Tag(from tagger): verb
+
+Line: pāturahosi verb
+Token: pāturahosi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: So pronoun
+Token: So
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: vehāsaṃ noun
+Token: vehāsaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: abbhuggantvā absolutive
+Token: abbhuggantvā
+Tag(from file): absolutive
+Tag(from tagger): verb
+
+Line: ākāse noun
+Token: ākāse
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: antalikkhe noun
+Token: antalikkhe
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: pallaṅkena noun
+Token: pallaṅkena
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: nisīdi verb
+Token: nisīdi
+Tag(from file): verb
+Tag(from tagger): unknown
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Yathāparisaṃ adverb
+Token: Yathāparisaṃ
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: pana conjunction
+Token: pana
+Tag(from file): conjunction
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhante noun
+Token: bhante
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: brahmā proper noun
+Token: brahmā
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: sanaṅkumāro noun
+Token: sanaṅkumāro
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: sarena noun
+Token: sarena
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: viññāpeti verb
+Token: viññāpeti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: ; @semicolon@
+Token: ;
+Tag(from file): @semicolon@
+Tagger ignores this token.
+
+Line: na negation particle
+Token: na
+Tag(from file): negation_particle
+Tag(from tagger): unknown
+
+Line: ca coordinative conjunciton
+Token: ca
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): unknown
+
+Line: assa demonstrative pronoun
+Token: assa
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): demonstrative_pronoun
+
+Line: bahiddhā adverb
+Token: bahiddhā
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: parisāya noun
+Token: parisāya
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: ghoso noun
+Token: ghoso
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: niccharati verb
+Token: niccharati
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Idha preposition
+Token: Idha
+Tag(from file): preposition
+Tag(from tagger): unknown
+
+Line: bho noun
+Token: bho
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: bhikkhu noun
+Token: bhikkhu
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: chandasamādhippadhānasaṅkhārasamannāgataṃ past passive participle
+Token: chandasamādhippadhānasaṅkhārasamannāgataṃ
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: iddhipādaṃ noun
+Token: iddhipādaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: bhāveti verb
+Token: bhāveti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Vīriyasamādhippadhānasaṅkhārasamannāgataṃ past passive participle
+Token: Vīriyasamādhippadhānasaṅkhārasamannāgataṃ
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: iddhipādaṃ noun
+Token: iddhipādaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: bhāveti verb
+Token: bhāveti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Cittasamādhippadhānasaṅkhārasamannāgataṃ past passive participle
+Token: Cittasamādhippadhānasaṅkhārasamannāgataṃ
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: iddhipādaṃ noun
+Token: iddhipādaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: bhāveti verb
+Token: bhāveti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Tassa pronoun
+Token: Tassa
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: oḷārikānaṃ adjective
+Token: oḷārikānaṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: kāyasaṅkhārānaṃ noun
+Token: kāyasaṅkhārānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: paṭippassaddhiyā noun
+Token: paṭippassaddhiyā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: oḷārikānaṃ adjective
+Token: oḷārikānaṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: vacīsaṅkhārānaṃ noun
+Token: vacīsaṅkhārānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: paṭippassaddhiyā noun
+Token: paṭippassaddhiyā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: oḷārikānaṃ adjective
+Token: oḷārikānaṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: cittasaṅkhārānaṃ noun
+Token: cittasaṅkhārānaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: paṭippassaddhiyā noun
+Token: paṭippassaddhiyā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: uppajjati verb
+Token: uppajjati
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: sukhaṃ noun
+Token: sukhaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: sukhā noun
+Token: sukhā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: bhiyyo adverb
+Token: bhiyyo
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: somanassaṃ noun
+Token: somanassaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: So pronoun
+Token: So
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: aparena adjective
+Token: aparena
+Tag(from file): adjective
+Tag(from tagger): unknown
+
+Line: samayena noun
+Token: samayena
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: ariyadhammaṃ noun
+Token: ariyadhammaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: suṇāti verb
+Token: suṇāti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: yoniso noun
+Token: yoniso
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: manasi noun
+Token: manasi
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: karoti verb
+Token: karoti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: dhammānudhammaṃ noun
+Token: dhammānudhammaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: paṭipajjati verb
+Token: paṭipajjati
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Idha preposition
+Token: Idha
+Tag(from file): preposition
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bho noun
+Token: bho
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhikkhu noun
+Token: bhikkhu
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: ajjhattaṃ adverb
+Token: ajjhattaṃ
+Tag(from file): adverb
+Tag(from tagger): verb
+
+Line: kāye noun
+Token: kāye
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: kāyānupassī adjective
+Token: kāyānupassī
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: viharati verb
+Token: viharati
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: ātāpī adjective
+Token: ātāpī
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: sampajāno adjective
+Token: sampajāno
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: satimā adjective
+Token: satimā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: vineyya absolutive
+Token: vineyya
+Tag(from file): absolutive
+Tag(from tagger): verb
+
+Line: loke noun
+Token: loke
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: abhijjhādomanassaṃ noun
+Token: abhijjhādomanassaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Evaṃ demonstrative adverb
+Token: Evaṃ
+Tag(from file): demonstrative_adverb
+Tag(from tagger): verb
+
+Line: me pronoun
+Token: me
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: sutaṃ past participle
+Token: sutaṃ
+Tag(from file): past_participle
+Tag(from tagger): verb
+
+Line: ekaṃ cardinal adjecitve
+Token: ekaṃ
+Tag(from file): cardinal_adjecitve
+Tag(from tagger): verb
+
+Line: samayaṃ noun
+Token: samayaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: bhagavā noun
+Token: bhagavā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: nāḷandāyaṃ proper noun
+Token: nāḷandāyaṃ
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: viharati verb
+Token: viharati
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: pāvārikambavane proper noun
+Token: pāvārikambavane
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Idha preposition
+Token: Idha
+Tag(from file): preposition
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: kevaṭṭa proper noun
+Token: kevaṭṭa
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhikkhu noun
+Token: bhikkhu
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: anekavihitaṃ past passive participle
+Token: anekavihitaṃ
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: iddhividhaṃ noun
+Token: iddhividhaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: paccanubhoti verb
+Token: paccanubhoti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Idaṃ demonstrative pronoun
+Token: Idaṃ
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): verb
+
+Line: vuccati verb
+Token: vuccati
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: kevaṭṭa proper noun
+Token: kevaṭṭa
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: anusāsanīpāṭihāriyaṃ noun
+Token: anusāsanīpāṭihāriyaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: Atha coordinative conjunciton
+Token: Atha
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: so pronoun
+Token: so
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: kevaṭṭa proper noun
+Token: kevaṭṭa
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhikkhu noun
+Token: bhikkhu
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: tathārūpaṃ adjective
+Token: tathārūpaṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: samādhiṃ noun
+Token: samādhiṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: samāpajji verb
+Token: samāpajji
+Tag(from file): verb
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: yathāsamāhite past passive participle
+Token: yathāsamāhite
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: citte noun
+Token: citte
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: devayāniyo adjective
+Token: devayāniyo
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: maggo noun
+Token: maggo
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: pāturahosi verb
+Token: pāturahosi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: ' @quote@
+Token: '
+Tag(from file): @quote@
+Tagger ignores this token.
+
+Line: Atha coordinative conjunciton
+Token: Atha
+Tag(from file): coordinative_conjunciton
+Tag(from tagger): verb
+
+Line: kho emphatic particle
+Token: kho
+Tag(from file): emphatic_particle
+Tag(from tagger): verb
+
+Line: so pronoun
+Token: so
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: kevaṭṭa proper noun
+Token: kevaṭṭa
+Tag(from file): proper_noun
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bhikkhu noun
+Token: bhikkhu
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: tathārūpaṃ adjective
+Token: tathārūpaṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: samādhiṃ noun
+Token: samādhiṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: samāpajji verb
+Token: samāpajji
+Tag(from file): verb
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: yathāsamāhite past passive participle
+Token: yathāsamāhite
+Tag(from file): past_passive_participle
+Tag(from tagger): verb
+
+Line: citte noun
+Token: citte
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: brahmayāniyo adjective
+Token: brahmayāniyo
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: maggo noun
+Token: maggo
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: pāturahosi verb
+Token: pāturahosi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Te pronoun
+Token: Te
+Tag(from file): pronoun
+Tag(from tagger): personal_pronoun
+
+Line: atīradakkhiniyā adjective
+Token: atīradakkhiniyā
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: nāvāya noun
+Token: nāvāya
+Tag(from file): noun
+Tag(from tagger): unknown
+
+Line: tīradassiṃ adjective
+Token: tīradassiṃ
+Tag(from file): adjective
+Tag(from tagger): verb
+
+Line: sakuṇaṃ noun
+Token: sakuṇaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: muñcanti verb
+Token: muñcanti
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Pāvisi verb
+Token: Pāvisi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: ambaṭṭho proper noun
+Token: ambaṭṭho
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: māṇavo noun
+Token: māṇavo
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Itiha emphatic particle
+Token: Itiha
+Tag(from file): emphatic_particle
+Tag(from tagger): unknown
+
+Line: ambaṭṭho proper noun
+Token: ambaṭṭho
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: māṇavo noun
+Token: māṇavo
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: idaṃ demonstrative pronoun
+Token: idaṃ
+Tag(from file): demonstrative_pronoun
+Tag(from tagger): verb
+
+Line: dutiyaṃ cardinal adjective
+Token: dutiyaṃ
+Tag(from file): cardinal_adjective
+Tag(from tagger): verb
+
+Line: sakyesu proper noun
+Token: sakyesu
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: ibbhavādaṃ noun
+Token: ibbhavādaṃ
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: nipātesi verb
+Token: nipātesi
+Tag(from file): verb
+Tag(from tagger): verb
+
+Line: . @point@
+Token: .
+Tag(from file): @point@
+Tagger ignores this token.
+
+Line: 
+
+Line: Ayyaputtā noun
+Token: Ayyaputtā
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: kira emphatic particle
+Token: kira
+Tag(from file): emphatic_particle
+Tag(from tagger): unknown
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: bho noun
+Token: bho
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: , @comma@
+Token: ,
+Tag(from file): @comma@
+Tagger ignores this token.
+
+Line: ambaṭṭhassa proper noun
+Token: ambaṭṭhassa
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: māṇavassa noun
+Token: māṇavassa
+Tag(from file): noun
+Tag(from tagger): verb
+
+Line: sakyā proper noun
+Token: sakyā
+Tag(from file): proper_noun
+Tag(from tagger): verb
+
+Line: bhavanti verb
+Token: bhavanti
+Tag(from file): verb
 Tag(from tagger): verb
 
 Line: . @point@

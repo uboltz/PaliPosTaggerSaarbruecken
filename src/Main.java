@@ -31,8 +31,11 @@ public class Main {
 		
 		
 		//TODO stop hardcoding file names
+		OutputWriter output = new OutputWriter("output.txt");
+		OutputWriter debug = new OutputWriter("debug.txt");
 		Tagger tagger = new Tagger("patterns.txt");
-		Evaluator evaluator = new Evaluator("output.txt");
+		Evaluator evaluator = new Evaluator(output, debug);
+		
 		String[] chars;
 		String currentToken;
 		String testDataTag;
@@ -45,9 +48,8 @@ public class Main {
 		//process single lines in the test file until none are left
 		while(!(line == null)) {
 			
-			//TODO move the output functionality away from evaluator class
-			evaluator.println();
-			evaluator.println("Line: " + line);
+			debug.println();
+			debug.println("Line: " + line);
 			
 			chars = line.split(" ");
 			
@@ -70,22 +72,22 @@ public class Main {
 				testDataTag = chars[1];
 				addCount(currentToken);
 				
-				evaluator.println("Token: " + currentToken);
-				evaluator.println("Tag(from file): " + testDataTag);
+				debug.println("Token: " + currentToken);
+				debug.println("Tag(from file): " + testDataTag);
 											
 
 
 				//ignore punctutation etc.
 				if (ignorableTag(testDataTag)) {
 					
-					evaluator.println("Tagger ignores this token.");
+					debug.println("Tagger ignores this token.");
 				}
 				
 				else {
 
 					//do the actual work
 					generatedTag = tagger.tag(currentToken);
-					evaluator.println("Tag(from tagger): " + generatedTag);
+					debug.println("Tag(from tagger): " + generatedTag);
 					taggedTokens.add(new TaggedToken(currentToken, testDataTag, generatedTag));
 													
 				}
@@ -98,12 +100,13 @@ public class Main {
 		}
 
 
-		evaluator.println();
-		evaluator.println();
+
 		
 		//print results
 		evaluator.printTagResults(taggedTokens);
 		evaluator.printOverallResults(taggedTokens);
+		evaluator.printAmbiguosWords(taggedTokens);
+		evaluator.printConfusionMatrix(taggedTokens);
 		
 	
 	}

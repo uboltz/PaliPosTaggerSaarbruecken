@@ -7,11 +7,11 @@
  */
 public class TagStats {
 	
-	public int overallCount = 0;
+	public int inTestData = 0;
 	
 	public int truePositives = 0;
 	public int falsePositives = 0;
 	public int falseNegatives = 0;
-	//true negatives are computed based on overall number of tokens at the end
+    public int trueNegatives = 0;
 
 }
